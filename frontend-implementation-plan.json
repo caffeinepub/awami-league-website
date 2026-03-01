@@ -1,0 +1,106 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Add party leadership tables, wings, and notable member links to Organisation and History pages",
+  "requirements": [
+    {
+      "id": "REQ-20",
+      "summary": "Add 'Party Presidents & General Secretaries (1949–present)' section with a structured table to the Organisation page",
+      "acceptanceCriteria": [
+        "A 'Party Presidents & General Secretaries (1949–present)' table is visible on the Organisation page.",
+        "All listed presidents and their terms and general secretaries are present.",
+        "The BAKSAL dissolution period is noted in the table.",
+        "Table is styled consistently with the site's existing green/gold/cream visual theme."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/Organisation.tsx",
+          "operation": "modify",
+          "description": "Add a new 'Party Presidents & General Secretaries (1949–present)' section with a structured table containing all leadership data from Abdul Hamid Khan Bhashani (1949) through Sheikh Hasina (1981–present). Include columns for Name, National Council years, Term period, and General Secretary. Note the BAKSAL dissolution period row. Apply table styling consistent with the site's green/gold/cream theme using Tailwind classes that match existing sections."
+        }
+      ]
+    },
+    {
+      "id": "REQ-21",
+      "summary": "Add 'Prime Ministers of Bangladesh (Awami League)' table with Wikipedia links to the Organisation page",
+      "acceptanceCriteria": [
+        "A 'Prime Ministers of Bangladesh (Awami League)' table appears on the Organisation page.",
+        "All four prime ministers and their terms are listed.",
+        "Sheikh Hasina, Tajuddin Ahmad, and Muhammad Mansur Ali are hyperlinked to their Wikipedia pages.",
+        "Links open in a new tab and are styled with the gold accent convention."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/Organisation.tsx",
+          "operation": "modify",
+          "description": "Add a new 'Prime Ministers of Bangladesh (Awami League)' section with a table listing Tajuddin Ahmad (1971–1972), Sheikh Mujibur Rahman (1972–1975), Muhammad Mansur Ali (1975), and Sheikh Hasina (1996–2001; 2009–2024). Link Sheikh Hasina to https://en.wikipedia.org/wiki/Sheikh_Hasina, Tajuddin Ahmad to https://en.wikipedia.org/wiki/Tajuddin_Ahmed, and Muhammad Mansur Ali to https://en.wikipedia.org/wiki/Muhammad_Mansur_Ali. All links must use target='_blank' rel='noopener noreferrer' and apply the site's existing gold accent link styling (examine existing History page links for the gold underline/hover pattern)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-22",
+      "summary": "Add 'Presidents of Bangladesh (Awami League era)' table to the Organisation page",
+      "acceptanceCriteria": [
+        "A 'Presidents of Bangladesh (Awami League era)' table appears on the Organisation page.",
+        "All listed presidents, their terms, and notable notes (Assassinated, Deposed) are displayed.",
+        "The table is styled consistently with the site's existing theme."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/Organisation.tsx",
+          "operation": "modify",
+          "description": "Add a new 'Presidents of Bangladesh (Awami League era)' section with a table listing Sheikh Mujibur Rahman (1971–1972), Abu Sayeed Chowdhury (1972–1973), Mohammad Mohammadullah (1974–1975), Sheikh Mujibur Rahman (1975, Assassinated), Khondaker Mostaq Ahmad (1975, Deposed), Abu Sadat Mohammad Sayem (1975–1977), Zillur Rahman (2009–2013), Mohammad Abdul Hamid (2013–2023), and Mohammed Shahabuddin (2023–Present). Link Zillur Rahman to https://en.wikipedia.org/wiki/Zillur_Rahman using target='_blank' rel='noopener noreferrer' and the site's gold accent link style. Include a Notes column for entries like 'Assassinated' and 'Deposed'."
+        }
+      ]
+    },
+    {
+      "id": "REQ-23",
+      "summary": "Add 'Vice President of Bangladesh' entry for Syed Nazrul Islam with Wikipedia link to the Organisation page",
+      "acceptanceCriteria": [
+        "Syed Nazrul Islam is listed as Vice President with his term and the acting president note.",
+        "His name is hyperlinked to his Wikipedia article and opens in a new tab."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/Organisation.tsx",
+          "operation": "modify",
+          "description": "Add a new 'Vice President of Bangladesh' section or entry (can be a small table or paragraph) noting Syed Nazrul Islam (1971–1972) with an additional note that he served as Acting Party President (1966–1969) while Sheikh Mujibur Rahman was in prison. Link Syed Nazrul Islam to https://en.wikipedia.org/wiki/Syed_Nazrul_Islam using target='_blank' rel='noopener noreferrer' and the site's gold accent link style."
+        }
+      ]
+    },
+    {
+      "id": "REQ-24",
+      "summary": "Add or update 'Party Wings' section with all eight wings in a structured table or card grid on the Organisation page",
+      "acceptanceCriteria": [
+        "All eight party wings are listed with their type, official name, and common term.",
+        "The section is styled consistently with the rest of the Organisation page.",
+        "The layout is responsive (table or card grid)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/Organisation.tsx",
+          "operation": "modify",
+          "description": "Add or update the 'Party Wings' section to display all eight wings in a structured responsive table or card grid with columns for Type, Official Name, and Common Term. Include: Student wing (Bangladesh Chhatra League / Chhatra League), Youth wing (Bangladesh Awami Jubo League / Jubo League), Women's wing (Bangladesh Mohila Awami League / Mohila League), Farmer wing (Bangladesh Krishak League / Krishak League), Trade union wing (Bangladesh Jatiya Sramik League / Jatiya Sramik League), Volunteer wing (Bangladesh Awami Swechasebak League / Swechasebak League), Female youth wing (Bangladesh Jubo Mohila League / Jubo Mohila League), and Fisherman wing (Bangladesh Awami Matsyajeebi League / Matsyajeebi League). Style consistently with the site's green/gold/cream theme and ensure responsive layout on mobile devices."
+        }
+      ]
+    },
+    {
+      "id": "REQ-25",
+      "summary": "Add Wikipedia links for notable parliament members (A.B.M. Mohiuddin Chowdhury, Saber Hossain Chowdhury, Ahsanullah Master) in the History page timeline",
+      "acceptanceCriteria": [
+        "A.B.M. Mohiuddin Chowdhury is hyperlinked in the History page timeline with the provided Wikipedia URL.",
+        "Saber Hossain Chowdhury is hyperlinked in the History page timeline with the provided Wikipedia URL.",
+        "Ahsanullah Master is hyperlinked in the History page timeline with the provided Wikipedia URL.",
+        "All three links open in a new tab with rel='noopener noreferrer' and use the gold accent link style.",
+        "If any name was not previously mentioned in the timeline, a brief factual sentence has been added in the appropriate chronological entry."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/History.tsx",
+          "operation": "modify",
+          "description": "Review the existing timeline entries in the History page and ensure A.B.M. Mohiuddin Chowdhury (https://en.wikipedia.org/wiki/A.B.M._Mohiuddin_Chowdhury), Saber Hossain Chowdhury (https://en.wikipedia.org/wiki/Saber_Hossain_Chowdhury), and Ahsanullah Master (https://en.wikipedia.org/wiki/Ahsanullah_Master) are hyperlinked wherever they appear. If any of these notable parliament members are not yet mentioned, add a brief factual sentence about their parliamentary role or contribution in a relevant chronological entry (e.g., under entries for the 1990s–2000s periods for their terms). All links must use target='_blank' rel='noopener noreferrer' and apply the site's existing gold accent/underline link convention consistent with other History page Wikipedia links."
+        }
+      ]
+    }
+  ]
+}

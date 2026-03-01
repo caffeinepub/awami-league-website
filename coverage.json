@@ -1,0 +1,90 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-03-01T14:05:33.012Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 6,
+    "implemented": 5,
+    "items": [
+      {
+        "id": "REQ-20",
+        "summary": "Enrich the Organisation page (`frontend/src/pages/Organisation.tsx`) with a new 'Party Presidents & General Secretaries (1949–present)' section containing a structured table with the following data rows: Abdul Hamid Khan Bhashani (NC: 1949, 53, 55; 23 June 1949 – 27 July 1956; GS: Shamsul Huq / Sheikh Mujibur Rahman), Huseyn Shaheed Suhrawardy acting (27 July 1956 – 10 October 1957; GS: Sheikh Mujibur Rahman), Abdur Rashid Tarkabagish (NC: 1957, 64; 10 October 1957 – 25 January 1966), Sheikh Mujibur Rahman (NC: 1966, 70, 72; 25 January 1966 – 18 January 1974; GS: Tajuddin Ahmad / Zillur Rahman), Muhammad Qamaruzzaman (NC: 1974; 18 January 1974 – 24 February 1975; GS: Zillur Rahman), Dissolution/BAKSAL period, Syeda Zohra Tajuddin as Convenor (Special Council 1977; 4 April 1977 – 16 February 1978), Abdul Malek Ukil (NC: 1978; 16 February 1978 – 16 February 1981; GS: Abdur Razzaq), Sheikh Hasina (NC: 1981, 87, 92, 97, 02, 09, 12, 16, 19, 22; 16 February 1981–present; GS: Abdur Razzaq / Syeda Sajeda Chowdhury / Zillur Rahman / Abdul Jalil / Sayed Ashraful Islam / Obaidul Quader). Apply a table style consistent with the site's green/gold/cream theme.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/Organisation.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/Organisation.tsx"
+        ]
+      },
+      {
+        "id": "REQ-21",
+        "summary": "Enrich the Organisation page (`frontend/src/pages/Organisation.tsx`) with a new 'Prime Ministers of Bangladesh (Awami League)' table listing: Tajuddin Ahmad (1971–1972), Sheikh Mujibur Rahman (1972–1975), Muhammad Mansur Ali (1975), Sheikh Hasina (1996–2001; 2009–2024). Link Sheikh Hasina's name to https://en.wikipedia.org/wiki/Sheikh_Hasina, Tajuddin Ahmad to https://en.wikipedia.org/wiki/Tajuddin_Ahmed, and Muhammad Mansur Ali to https://en.wikipedia.org/wiki/Muhammad_Mansur_Ali. All links open in a new tab with `target='_blank' rel='noopener noreferrer'` and use the site's gold accent link style.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/Organisation.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/Organisation.tsx"
+        ]
+      },
+      {
+        "id": "REQ-22",
+        "summary": "Enrich the Organisation page (`frontend/src/pages/Organisation.tsx`) with a new 'Presidents of Bangladesh (Awami League era)' table listing: Sheikh Mujibur Rahman (1971–1972), Abu Sayeed Chowdhury (1972–1973), Mohammad Mohammadullah (1974–1975), Sheikh Mujibur Rahman (1975, Assassinated), Khondaker Mostaq Ahmad (1975, Deposed), Abu Sadat Mohammad Sayem (1975–1977), Zillur Rahman (2009–2013), Mohammad Abdul Hamid (2013–2023), Mohammed Shahabuddin (2023–Present). Link Zillur Rahman to https://en.wikipedia.org/wiki/Zillur_Rahman where appropriate. All external links open in a new tab with `target='_blank' rel='noopener noreferrer'` and use the site's gold accent link style.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/Organisation.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/Organisation.tsx"
+        ]
+      },
+      {
+        "id": "REQ-23",
+        "summary": "Enrich the Organisation page (`frontend/src/pages/Organisation.tsx`) with a new 'Vice President of Bangladesh' entry noting Syed Nazrul Islam (1971–1972) with the note that he served as Acting Party President (1966–1969) while Sheikh Mujibur Rahman was in prison. Link Syed Nazrul Islam to https://en.wikipedia.org/wiki/Syed_Nazrul_Islam. The link must open in a new tab with `target='_blank' rel='noopener noreferrer'` and use the site's gold accent link style.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/Organisation.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/Organisation.tsx"
+        ]
+      },
+      {
+        "id": "REQ-24",
+        "summary": "Add or update the 'Party Wings' section on the Organisation page (`frontend/src/pages/Organisation.tsx`) to display all eight wings in a structured table or card grid with columns for Type, Official Name, and Common Term: Student wing – Bangladesh Chhatra League (Chhatra League), Youth wing – Bangladesh Awami Jubo League (Jubo League), Women's wing – Bangladesh Mohila Awami League (Mohila League), Farmer wing – Bangladesh Krishak League (Krishak League), Trade union wing – Bangladesh Jatiya Sramik League (Jatiya Sramik League), Volunteer wing – Bangladesh Awami Swechasebak League (Swechasebak League), Female youth wing – Bangladesh Jubo Mohila League (Jubo Mohila League), Fisherman wing – Bangladesh Awami Matsyajeebi League (Matsyajeebi League). Style consistently with the site's green/gold/cream theme.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/Organisation.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/Organisation.tsx"
+        ]
+      },
+      {
+        "id": "REQ-25",
+        "summary": "In the History page (`frontend/src/pages/History.tsx`), ensure A.B.M. Mohiuddin Chowdhury (https://en.wikipedia.org/wiki/A.B.M._Mohiuddin_Chowdhury), Saber Hossain Chowdhury (https://en.wikipedia.org/wiki/Saber_Hossain_Chowdhury), and Ahsanullah Master (https://en.wikipedia.org/wiki/Ahsanullah_Master) are hyperlinked wherever they are mentioned. If any of these notable parliament members are not yet mentioned in an appropriate timeline entry, add a brief factual sentence about each in a relevant chronological entry (e.g., mentioning their parliamentary role or contribution to the party). All links must open in a new tab with `target='_blank' rel='noopener noreferrer'` and be styled with the site's existing gold accent/underline link convention.",
+        "status": "missing",
+        "plannedFiles": [
+          "frontend/src/pages/History.tsx"
+        ],
+        "matchedFiles": []
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/pages/Organisation.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+
+    /* Brand Colors - Deep Forest Green & Vivid Red */
+    --background: 0.97 0.008 90;
+    --foreground: 0.18 0.02 60;
+
+    --card: 0.99 0.004 90;
+    --card-foreground: 0.18 0.02 60;
+
+    --popover: 0.99 0.004 90;
+    --popover-foreground: 0.18 0.02 60;
+
+    /* Deep Forest Green */
+    --primary: 0.38 0.1 155;
+    --primary-foreground: 0.98 0.005 90;
+
+    /* Vivid Red */
+    --secondary: 0.52 0.22 25;
+    --secondary-foreground: 0.98 0.005 90;
+
+    --muted: 0.93 0.01 90;
+    --muted-foreground: 0.5 0.02 60;
+
+    /* Gold Accent */
+    --accent: 0.78 0.12 75;
+    --accent-foreground: 0.18 0.02 60;
+
+    --destructive: 0.52 0.22 25;
+    --destructive-foreground: 0.98 0.005 90;
+
+    --border: 0.88 0.015 90;
+    --input: 0.88 0.015 90;
+    --ring: 0.38 0.1 155;
+
+    --chart-1: 0.38 0.1 155;
+    --chart-2: 0.52 0.22 25;
+    --chart-3: 0.78 0.12 75;
+    --chart-4: 0.6 0.08 155;
+    --chart-5: 0.7 0.15 25;
+
+    --sidebar: 0.99 0.004 90;
+    --sidebar-foreground: 0.18 0.02 60;
+    --sidebar-primary: 0.38 0.1 155;
+    --sidebar-primary-foreground: 0.98 0.005 90;
+    --sidebar-accent: 0.93 0.01 90;
+    --sidebar-accent-foreground: 0.18 0.02 60;
+    --sidebar-border: 0.88 0.015 90;
+    --sidebar-ring: 0.38 0.1 155;
+  }
+
+  .dark {
+    --background: 0.14 0.02 60;
+    --foreground: 0.95 0.008 90;
+
+    --card: 0.18 0.02 60;
+    --card-foreground: 0.95 0.008 90;
+
+    --popover: 0.2 0.02 60;
+    --popover-foreground: 0.95 0.008 90;
+
+    --primary: 0.55 0.12 155;
+    --primary-foreground: 0.98 0.005 90;
+
+    --secondary: 0.6 0.2 25;
+    --secondary-foreground: 0.98 0.005 90;
+
+    --muted: 0.22 0.02 60;
+    --muted-foreground: 0.65 0.02 60;
+
+    --accent: 0.72 0.1 75;
+    --accent-foreground: 0.18 0.02 60;
+
+    --destructive: 0.6 0.2 25;
+    --destructive-foreground: 0.98 0.005 90;
+
+    --border: 1 0 0 / 10%;
+    --input: 1 0 0 / 15%;
+    --ring: 0.55 0.12 155;
+
+    --sidebar: 0.18 0.02 60;
+    --sidebar-foreground: 0.95 0.008 90;
+    --sidebar-primary: 0.55 0.12 155;
+    --sidebar-primary-foreground: 0.98 0.005 90;
+    --sidebar-accent: 0.22 0.02 60;
+    --sidebar-accent-foreground: 0.95 0.008 90;
+    --sidebar-border: 1 0 0 / 10%;
+    --sidebar-ring: 0.55 0.12 155;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .hero-overlay {
+    background: linear-gradient(
+      135deg,
+      oklch(0.22 0.08 155 / 0.92) 0%,
+      oklch(0.18 0.06 155 / 0.75) 50%,
+      oklch(0.35 0.18 25 / 0.6) 100%
+    );
+  }
+
+  .section-divider {
+    background: linear-gradient(
+      90deg,
+      transparent,
+      oklch(var(--primary)),
+      oklch(var(--secondary)),
+      transparent
+    );
+    height: 2px;
+  }
+
+  .gold-divider {
+    background: linear-gradient(
+      90deg,
+      transparent,
+      oklch(var(--accent)),
+      transparent
+    );
+    height: 1px;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
+  }
+
+  .nav-link-active {
+    @apply text-accent font-semibold;
+  }
+}

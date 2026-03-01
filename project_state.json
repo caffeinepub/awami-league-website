@@ -1,0 +1,283 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 13,
+  "summary": "A website for the Awami League political organization of Bangladesh, covering its history, ideology, policies, organisation, and affiliated student wing (Bangladesh Chhatra League), based on provided reference links.",
+  "architectural_notes": [
+    "Multi-page or single-page website covering Awami League: history, ideology, organisation, and Chhatra League student wing",
+    "Content sourced from Wikipedia, albd.org, and academic references provided by the user",
+    "Additional Wikipedia reference sources added: Bangabandhu, Bengali alphabet, founding figures (Shamsul Huq, Khaleque Nawaz Khan, Shawkat Ali, Kazi Golam Mahboob, A.K. Fazlul Huq, Oli Ahad, Maulana Bhashani, Ataur Rahman Khan), Bengali language movement, Jukta Front, Bangla Academy, Kagmari Conference, University of Dhaka, Six-point movement, Agartala Conspiracy Case",
+    "Additional Wikipedia reference sources added: A.B.M. Mohiuddin Chowdhury, Saber Hossain Chowdhury, Non-Aligned Movement, Bangladesh famine of 1974, Bangladesh Krishak Sramik Awami League, Syed Nazrul Islam, Tajuddin Ahmed, Muhammad Mansur Ali, A.H.M. Qamaruzzaman, Sheikh Hasina, Gopalganj District (Bangladesh), Ahsanullah Master, 2004 Dhaka grenade attack; Noor Hossain rally image (Wikimedia Commons)",
+    "Additional Wikipedia reference sources added: Asaduzzaman Nur, 2008 Bangladeshi general election, Jatiya Party (Ershad), Dipu Moni",
+    "Additional reference sources: A.B.M. Mohiuddin Chowdhury, Saber Hossain Chowdhury, Ahsanullah Master (parliament members); Sheikh Hasina (PM); PM/President/General Secretary tables (1949–present); full list of Awami League wings"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-visually-compelling-homepage-with-a-hero-section-featuring-the-awami-league-name-founding-year-1949-and-a-brief-mission-statement-include-quick-navigation-cards-linking-to-history-ideology-policies-organisation-and-chhatra-league-sections-display-key-facts-e-g-founded-headquarters-ideology-leader-in-a-prominent-info-strip",
+      "title": "Create a visually compelling homepage with a hero section featuring the Awami League name, founding year (1949), and a brief mission statement. Include quick-navigation cards linking to History, Ideology & Policies, Organisation, and Chhatra League sections. Display key facts (e.g., founded, headquarters, ideology, leader) in a prominent info strip.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-history-section-covering-the-founding-of-awami-league-in-1949-by-huseyn-shaheed-suhrawardy-and-sheikh-mujibur-rahman-major-milestones-language-movement-1952-six-point-movement-1966-1970-elections-liberation-war-1971-bangladesh-independence-in-1971-and-the-post-independence-political-history-of-the-party-up-to-the-present",
+      "title": "Create a History section covering: the founding of Awami League in 1949 by Huseyn Shaheed Suhrawardy and Sheikh Mujibur Rahman, major milestones (Language Movement 1952, Six-Point Movement 1966, 1970 elections, Liberation War 1971), Bangladesh independence in 1971, and the post-independence political history of the party up to the present.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-an-ideology-policies-section-describing-the-awami-league-s-core-ideological-pillars-bengali-nationalism-democracy-secularism-and-socialism-as-enshrined-in-the-1972-constitution-include-subsections-for-major-policy-stances-on-economy-education-social-welfare-and-foreign-policy",
+      "title": "Create an Ideology & Policies section describing the Awami League's core ideological pillars: Bengali nationalism, democracy, secularism, and socialism (as enshrined in the 1972 Constitution). Include subsections for major policy stances on economy, education, social welfare, and foreign policy.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-an-organisation-section-describing-the-awami-league-s-internal-structure-party-president-general-secretary-national-council-executive-committee-and-affiliated-organizations-include-information-about-district-upazila-and-grassroots-level-units",
+      "title": "Create an Organisation section describing the Awami League's internal structure: party president, general secretary, national council, executive committee, and affiliated organizations. Include information about district, upazila, and grassroots-level units.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-bangladesh-chhatra-league-section-dedicated-to-the-student-wing-of-the-awami-league-cover-its-founding-in-1948-by-sheikh-mujibur-rahman-its-role-in-the-language-movement-and-liberation-war-its-structure-and-its-significance-in-bengali-political-history",
+      "title": "Create a Bangladesh Chhatra League section dedicated to the student wing of the Awami League. Cover its founding in 1948 by Sheikh Mujibur Rahman, its role in the Language Movement and Liberation War, its structure, and its significance in Bengali political history.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-site-wide-navigation-bar-with-links-to-home-history-ideology-policies-organisation-chhatra-league-and-a-contact-join-us-placeholder-page-the-navbar-should-be-sticky-and-collapse-into-a-hamburger-menu-on-mobile",
+      "title": "Implement a site-wide navigation bar with links to: Home, History, Ideology & Policies, Organisation, Chhatra League, and a Contact/Join Us placeholder page. The navbar should be sticky and collapse into a hamburger menu on mobile.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-cohesive-visual-theme-inspired-by-bangladeshi-national-identity-use-deep-forest-green-and-vivid-red-as-primary-brand-colors-reflecting-the-bangladesh-flag-and-awami-league-iconography-paired-with-off-white-cream-backgrounds-and-gold-accent-tones-use-bold-serif-style-headings-for-gravitas-and-clean-sans-serif-body-text-apply-consistent-card-layouts-section-dividers-and-subtle-texture-or-pattern-backgrounds-to-evoke-a-sense-of-heritage-and-civic-pride",
+      "title": "Apply a cohesive visual theme inspired by Bangladeshi national identity: use deep forest green and vivid red as primary brand colors (reflecting the Bangladesh flag and Awami League iconography), paired with off-white/cream backgrounds and gold accent tones. Use bold, serif-style headings for gravitas and clean sans-serif body text. Apply consistent card layouts, section dividers, and subtle texture or pattern backgrounds to evoke a sense of heritage and civic pride.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-footer-with-links-to-all-main-sections-a-brief-tagline-about-the-awami-league-and-reference-links-to-the-official-website-https-www-albd-org-and-the-wikipedia-page-https-en-wikipedia-org-wiki-awami-league",
+      "title": "Create a footer with links to all main sections, a brief tagline about the Awami League, and reference links to the official website (https://www.albd.org/) and the Wikipedia page (https://en.wikipedia.org/wiki/Awami_League).",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-login-logout-button-to-the-site-wide-navbar-when-the-user-is-not-authenticated-show-a-member-login-button-that-triggers-internet-identity-login-when-authenticated-show-the-user-s-abbreviated-principal-or-display-name-alongside-a-logout-button-use-the-existing-useinternetidentity-hook",
+      "title": "Add a Login/Logout button to the site-wide Navbar. When the user is not authenticated, show a 'Member Login' button that triggers Internet Identity login. When authenticated, show the user's abbreviated Principal or display name alongside a 'Logout' button. Use the existing `useInternetIdentity` hook.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-members-area-page-route-members-accessible-only-to-authenticated-and-registered-internet-identity-users-the-page-should-display-a-personalised-welcome-message-a-membership-registration-form-for-first-time-visitors-who-have-logged-in-but-not-yet-registered-and-exclusive-content-sections-such-as-internal-party-announcements-member-resources-and-a-member-directory-placeholder",
+      "title": "Create a 'Members Area' page (route `/members`) accessible only to authenticated and registered Internet Identity users. The page should display a personalised welcome message, a membership registration form (for first-time visitors who have logged in but not yet registered), and exclusive content sections such as internal party announcements, member resources, and a member directory placeholder.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-frontend-src-hooks-usequeries-ts-to-add-react-query-hooks-for-the-backend-calls-usemyprofile-fetches-the-current-user-s-member-profile-useismember-checks-membership-status-and-useregistermember-mutation-to-register-as-a-member-these-hooks-should-use-the-authenticated-actor-from-useactor",
+      "title": "Update `frontend/src/hooks/useQueries.ts` to add React Query hooks for the backend calls: `useMyProfile` (fetches the current user's member profile), `useIsMember` (checks membership status), and `useRegisterMember` (mutation to register as a member). These hooks should use the authenticated actor from `useActor`.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-members-route-to-the-tanstack-router-configuration-in-frontend-src-app-tsx-wrapping-the-members-area-page-in-the-shared-layout-component-consistent-with-all-other-routes",
+      "title": "Add the `/members` route to the TanStack Router configuration in `frontend/src/App.tsx`, wrapping the Members Area page in the shared Layout component consistent with all other routes.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-enrich-the-history-page-frontend-src-pages-history-tsx-by-embedding-inline-hyperlinks-to-the-following-wikipedia-articles-wherever-the-relevant-subjects-are-mentioned-in-the-timeline-text-bangabandhu-https-en-wikipedia-org-wiki-bangabandhu-shamsul-huq-https-en-wikipedia-org-wiki-shamsul-huq-khaleque-nawaz-khan-https-en-wikipedia-org-wiki-khaleque-nawaz-khan-shawkat-ali-https-en-wikipedia-org-wiki-shawkat-ali-kazi-golam-mahboob-https-en-wikipedia-org-wiki-kazi-golam-mahboob-a-k-fazlul-huq-https-en-wikipedia-org-wiki-a-k-fazlul-huq-oli-ahad-https-en-wikipedia-org-wiki-oli-ahad-maulana-abdul-hamid-khan-bhashani-https-en-wikipedia-org-wiki-maulana-abdul-hamid-khan-bhashani-ataur-rahman-khan-https-en-wikipedia-org-wiki-ataur-rahman-khan-bengali-language-movement-https-en-wikipedia-org-wiki-bengali-language-movement-jukta-front-https-en-wikipedia-org-wiki-jukta-front-bangla-academy-https-en-wikipedia-org-wiki-bangla-academy-kagmari-conference-https-en-wikipedia-org-wiki-kagmari-conference-university-of-dhaka-https-en-wikipedia-org-wiki-university-of-dhaka-six-point-movement-https-en-wikipedia-org-wiki-six-point-movement-and-agartala-conspiracy-case-https-en-wikipedia-org-wiki-agartala-conspiracy-case-all-links-must-open-in-a-new-tab-target-blank-rel-noopener-noreferrer-and-be-styled-consistently-with-the-site-s-gold-accent-or-underline-convention-if-a-subject-is-not-yet-mentioned-in-the-timeline-add-a-brief-factual-sentence-referencing-it-in-the-appropriate-chronological-entry",
+      "title": "Enrich the History page (`frontend/src/pages/History.tsx`) by embedding inline hyperlinks to the following Wikipedia articles wherever the relevant subjects are mentioned in the timeline text: Bangabandhu (https://en.wikipedia.org/wiki/Bangabandhu), Shamsul Huq (https://en.wikipedia.org/wiki/Shamsul_Huq), Khaleque Nawaz Khan (https://en.wikipedia.org/wiki/Khaleque_Nawaz_Khan), Shawkat Ali (https://en.wikipedia.org/wiki/Shawkat_Ali), Kazi Golam Mahboob (https://en.wikipedia.org/wiki/Kazi_Golam_Mahboob), A. K. Fazlul Huq (https://en.wikipedia.org/wiki/A._K._Fazlul_Huq), Oli Ahad (https://en.wikipedia.org/wiki/Oli_Ahad), Maulana Abdul Hamid Khan Bhashani (https://en.wikipedia.org/wiki/Maulana_Abdul_Hamid_Khan_Bhashani), Ataur Rahman Khan (https://en.wikipedia.org/wiki/Ataur_Rahman_Khan), Bengali language movement (https://en.wikipedia.org/wiki/Bengali_language_movement), Jukta Front (https://en.wikipedia.org/wiki/Jukta_Front), Bangla Academy (https://en.wikipedia.org/wiki/Bangla_Academy), Kagmari Conference (https://en.wikipedia.org/wiki/Kagmari_Conference), University of Dhaka (https://en.wikipedia.org/wiki/University_of_Dhaka), Six-point movement (https://en.wikipedia.org/wiki/Six_point_movement), and Agartala Conspiracy Case (https://en.wikipedia.org/wiki/Agartala_Conspiracy_Case). All links must open in a new tab (`target='_blank' rel='noopener noreferrer'`) and be styled consistently with the site's gold accent or underline convention. If a subject is not yet mentioned in the timeline, add a brief factual sentence referencing it in the appropriate chronological entry.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-reference-to-the-bengali-alphabet-https-en-wikipedia-org-wiki-bengali-alphabet-in-the-ideology-policies-page-frontend-src-pages-ideology-tsx-within-the-bengali-nationalism-pillar-section-linking-the-phrase-bengali-language-or-bengali-script-to-that-wikipedia-article-the-link-must-open-in-a-new-tab-and-use-the-same-styling-convention-as-other-external-links-on-the-site",
+      "title": "Add a reference to the Bengali alphabet (https://en.wikipedia.org/wiki/Bengali_alphabet) in the Ideology & Policies page (`frontend/src/pages/Ideology.tsx`) within the Bengali Nationalism pillar section, linking the phrase 'Bengali language' or 'Bengali script' to that Wikipedia article. The link must open in a new tab and use the same styling convention as other external links on the site.",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-chhatra-league-page-frontend-src-pages-chhatraleague-tsx-to-include-inline-wikipedia-hyperlinks-wherever-the-following-subjects-are-mentioned-bangabandhu-https-en-wikipedia-org-wiki-bangabandhu-bengali-language-movement-https-en-wikipedia-org-wiki-bengali-language-movement-and-university-of-dhaka-https-en-wikipedia-org-wiki-university-of-dhaka-if-any-of-these-subjects-are-not-yet-referenced-on-this-page-add-a-brief-factual-sentence-about-them-in-the-appropriate-context-all-links-must-open-in-a-new-tab-with-rel-noopener-noreferrer-and-match-the-site-s-link-styling-convention",
+      "title": "Update the Chhatra League page (`frontend/src/pages/ChhatraLeague.tsx`) to include inline Wikipedia hyperlinks wherever the following subjects are mentioned: Bangabandhu (https://en.wikipedia.org/wiki/Bangabandhu), Bengali language movement (https://en.wikipedia.org/wiki/Bengali_language_movement), and University of Dhaka (https://en.wikipedia.org/wiki/University_of_Dhaka). If any of these subjects are not yet referenced on this page, add a brief factual sentence about them in the appropriate context. All links must open in a new tab with rel='noopener noreferrer' and match the site's link styling convention.",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-enrich-the-history-page-frontend-src-pages-history-tsx-by-embedding-inline-hyperlinks-to-the-following-wikipedia-articles-wherever-the-relevant-subjects-are-mentioned-in-the-timeline-text-a-b-m-mohiuddin-chowdhury-https-en-wikipedia-org-wiki-a-b-m-mohiuddin-chowdhury-saber-hossain-chowdhury-https-en-wikipedia-org-wiki-saber-hossain-chowdhury-non-aligned-movement-https-en-wikipedia-org-wiki-non-aligned-movement-bangladesh-famine-of-1974-https-en-wikipedia-org-wiki-bangladesh-famine-of-1974-bangladesh-krishak-sramik-awami-league-https-en-wikipedia-org-wiki-bangladesh-krishak-sramik-awami-league-syed-nazrul-islam-https-en-wikipedia-org-wiki-syed-nazrul-islam-tajuddin-ahmed-https-en-wikipedia-org-wiki-tajuddin-ahmed-muhammad-mansur-ali-https-en-wikipedia-org-wiki-muhammad-mansur-ali-a-h-m-qamaruzzaman-https-en-wikipedia-org-wiki-a-h-m-qamaruzzaman-sheikh-hasina-https-en-wikipedia-org-wiki-sheikh-hasina-gopalganj-district-https-en-wikipedia-org-wiki-gopalganj-district-bangladesh-ahsanullah-master-https-en-wikipedia-org-wiki-ahsanullah-master-and-2004-dhaka-grenade-attack-https-en-wikipedia-org-wiki-2004-dhaka-grenade-attack-if-any-subject-is-not-yet-mentioned-in-the-timeline-add-a-brief-factual-sentence-referencing-it-in-the-appropriate-chronological-entry-all-links-must-open-in-a-new-tab-target-blank-rel-noopener-noreferrer-and-be-styled-consistently-with-the-site-s-existing-gold-accent-underline-link-convention",
+      "title": "Enrich the History page (`frontend/src/pages/History.tsx`) by embedding inline hyperlinks to the following Wikipedia articles wherever the relevant subjects are mentioned in the timeline text: A.B.M. Mohiuddin Chowdhury (https://en.wikipedia.org/wiki/A.B.M._Mohiuddin_Chowdhury), Saber Hossain Chowdhury (https://en.wikipedia.org/wiki/Saber_Hossain_Chowdhury), Non-Aligned Movement (https://en.wikipedia.org/wiki/Non-Aligned_Movement), Bangladesh famine of 1974 (https://en.wikipedia.org/wiki/Bangladesh_famine_of_1974), Bangladesh Krishak Sramik Awami League (https://en.wikipedia.org/wiki/Bangladesh_Krishak_Sramik_Awami_League), Syed Nazrul Islam (https://en.wikipedia.org/wiki/Syed_Nazrul_Islam), Tajuddin Ahmed (https://en.wikipedia.org/wiki/Tajuddin_Ahmed), Muhammad Mansur Ali (https://en.wikipedia.org/wiki/Muhammad_Mansur_Ali), A. H. M. Qamaruzzaman (https://en.wikipedia.org/wiki/A._H._M._Qamaruzzaman), Sheikh Hasina (https://en.wikipedia.org/wiki/Sheikh_Hasina), Gopalganj District (https://en.wikipedia.org/wiki/Gopalganj_District_(Bangladesh)), Ahsanullah Master (https://en.wikipedia.org/wiki/Ahsanullah_Master), and 2004 Dhaka grenade attack (https://en.wikipedia.org/wiki/2004_Dhaka_grenade_attack). If any subject is not yet mentioned in the timeline, add a brief factual sentence referencing it in the appropriate chronological entry. All links must open in a new tab (`target='_blank' rel='noopener noreferrer'`) and be styled consistently with the site's existing gold accent/underline link convention.",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-embed-the-noor-hossain-rally-photograph-from-wikimedia-commons-https-upload-wikimedia-org-wikipedia-commons-thumb-d-de-shoirachar-nipat-jaak-noor-hossain-40-awami-league-rally-on-nov-10-1987-jpg-250px-shoirachar-nipat-jaak-noor-hossain-40-awami-league-rally-on-nov-10-1987-jpg-in-the-history-page-frontend-src-pages-history-tsx-within-or-adjacent-to-the-chronological-entry-for-the-10-november-1987-awami-league-mass-rally-display-the-image-with-an-appropriate-caption-crediting-it-as-sourced-from-wikimedia-commons-styled-consistently-with-the-page-s-existing-layout-and-visual-theme",
+      "title": "Embed the Noor Hossain rally photograph from Wikimedia Commons (https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Shoirachar_Nipat_Jaak_-_Noor_Hossain_%40_Awami_League_Rally_on_Nov_10_1987.jpg/250px-Shoirachar_Nipat_Jaak_-_Noor_Hossain_%40_Awami_League_Rally_on_Nov_10_1987.jpg) in the History page (`frontend/src/pages/History.tsx`) within or adjacent to the chronological entry for the 10 November 1987 Awami League mass rally. Display the image with an appropriate caption crediting it as sourced from Wikimedia Commons, styled consistently with the page's existing layout and visual theme.",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-enrich-the-history-page-frontend-src-pages-history-tsx-by-embedding-inline-hyperlinks-to-the-following-wikipedia-articles-wherever-the-relevant-subjects-are-mentioned-in-the-timeline-text-asaduzzaman-nur-https-en-wikipedia-org-wiki-asaduzzaman-nur-2008-bangladeshi-general-election-https-en-wikipedia-org-wiki-2008-bangladeshi-general-election-jatiya-party-ershad-https-en-wikipedia-org-wiki-jatiya-party-ershad-and-dipu-moni-https-en-wikipedia-org-wiki-dipu-moni-if-any-of-these-subjects-are-not-yet-mentioned-in-the-timeline-add-a-brief-factual-sentence-referencing-them-in-the-appropriate-chronological-entry-all-links-must-open-in-a-new-tab-target-blank-rel-noopener-noreferrer-and-be-styled-consistently-with-the-site-s-existing-gold-accent-underline-link-convention",
+      "title": "Enrich the History page (`frontend/src/pages/History.tsx`) by embedding inline hyperlinks to the following Wikipedia articles wherever the relevant subjects are mentioned in the timeline text: Asaduzzaman Nur (https://en.wikipedia.org/wiki/Asaduzzaman_Nur), 2008 Bangladeshi general election (https://en.wikipedia.org/wiki/2008_Bangladeshi_general_election), Jatiya Party (Ershad) (https://en.wikipedia.org/wiki/Jatiya_Party_(Ershad)), and Dipu Moni (https://en.wikipedia.org/wiki/Dipu_Moni). If any of these subjects are not yet mentioned in the timeline, add a brief factual sentence referencing them in the appropriate chronological entry. All links must open in a new tab (`target='_blank' rel='noopener noreferrer'`) and be styled consistently with the site's existing gold accent/underline link convention.",
+      "reqIds": [
+        "REQ-19"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-enrich-the-organisation-page-frontend-src-pages-organisation-tsx-with-a-new-party-presidents-general-secretaries-1949-present-section-containing-a-structured-table-with-the-following-data-rows-abdul-hamid-khan-bhashani-nc-1949-53-55-23-june-1949-27-july-1956-gs-shamsul-huq-sheikh-mujibur-rahman-huseyn-shaheed-suhrawardy-acting-27-july-1956-10-october-1957-gs-sheikh-mujibur-rahman-abdur-rashid-tarkabagish-nc-1957-64-10-october-1957-25-january-1966-sheikh-mujibur-rahman-nc-1966-70-72-25-january-1966-18-january-1974-gs-tajuddin-ahmad-zillur-rahman-muhammad-qamaruzzaman-nc-1974-18-january-1974-24-february-1975-gs-zillur-rahman-dissolution-baksal-period-syeda-zohra-tajuddin-as-convenor-special-council-1977-4-april-1977-16-february-1978-abdul-malek-ukil-nc-1978-16-february-1978-16-february-1981-gs-abdur-razzaq-sheikh-hasina-nc-1981-87-92-97-02-09-12-16-19-22-16-february-1981-present-gs-abdur-razzaq-syeda-sajeda-chowdhury-zillur-rahman-abdul-jalil-sayed-ashraful-islam-obaidul-quader-apply-a-table-style-consistent-with-the-site-s-green-gold-cream-theme",
+      "title": "Enrich the Organisation page (`frontend/src/pages/Organisation.tsx`) with a new 'Party Presidents & General Secretaries (1949–present)' section containing a structured table with the following data rows: Abdul Hamid Khan Bhashani (NC: 1949, 53, 55; 23 June 1949 – 27 July 1956; GS: Shamsul Huq / Sheikh Mujibur Rahman), Huseyn Shaheed Suhrawardy acting (27 July 1956 – 10 October 1957; GS: Sheikh Mujibur Rahman), Abdur Rashid Tarkabagish (NC: 1957, 64; 10 October 1957 – 25 January 1966), Sheikh Mujibur Rahman (NC: 1966, 70, 72; 25 January 1966 – 18 January 1974; GS: Tajuddin Ahmad / Zillur Rahman), Muhammad Qamaruzzaman (NC: 1974; 18 January 1974 – 24 February 1975; GS: Zillur Rahman), Dissolution/BAKSAL period, Syeda Zohra Tajuddin as Convenor (Special Council 1977; 4 April 1977 – 16 February 1978), Abdul Malek Ukil (NC: 1978; 16 February 1978 – 16 February 1981; GS: Abdur Razzaq), Sheikh Hasina (NC: 1981, 87, 92, 97, 02, 09, 12, 16, 19, 22; 16 February 1981–present; GS: Abdur Razzaq / Syeda Sajeda Chowdhury / Zillur Rahman / Abdul Jalil / Sayed Ashraful Islam / Obaidul Quader). Apply a table style consistent with the site's green/gold/cream theme.",
+      "reqIds": [
+        "REQ-20"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-enrich-the-organisation-page-frontend-src-pages-organisation-tsx-with-a-new-prime-ministers-of-bangladesh-awami-league-table-listing-tajuddin-ahmad-1971-1972-sheikh-mujibur-rahman-1972-1975-muhammad-mansur-ali-1975-sheikh-hasina-1996-2001-2009-2024-link-sheikh-hasina-s-name-to-https-en-wikipedia-org-wiki-sheikh-hasina-tajuddin-ahmad-to-https-en-wikipedia-org-wiki-tajuddin-ahmed-and-muhammad-mansur-ali-to-https-en-wikipedia-org-wiki-muhammad-mansur-ali-all-links-open-in-a-new-tab-with-target-blank-rel-noopener-noreferrer-and-use-the-site-s-gold-accent-link-style",
+      "title": "Enrich the Organisation page (`frontend/src/pages/Organisation.tsx`) with a new 'Prime Ministers of Bangladesh (Awami League)' table listing: Tajuddin Ahmad (1971–1972), Sheikh Mujibur Rahman (1972–1975), Muhammad Mansur Ali (1975), Sheikh Hasina (1996–2001; 2009–2024). Link Sheikh Hasina's name to https://en.wikipedia.org/wiki/Sheikh_Hasina, Tajuddin Ahmad to https://en.wikipedia.org/wiki/Tajuddin_Ahmed, and Muhammad Mansur Ali to https://en.wikipedia.org/wiki/Muhammad_Mansur_Ali. All links open in a new tab with `target='_blank' rel='noopener noreferrer'` and use the site's gold accent link style.",
+      "reqIds": [
+        "REQ-21"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-enrich-the-organisation-page-frontend-src-pages-organisation-tsx-with-a-new-presidents-of-bangladesh-awami-league-era-table-listing-sheikh-mujibur-rahman-1971-1972-abu-sayeed-chowdhury-1972-1973-mohammad-mohammadullah-1974-1975-sheikh-mujibur-rahman-1975-assassinated-khondaker-mostaq-ahmad-1975-deposed-abu-sadat-mohammad-sayem-1975-1977-zillur-rahman-2009-2013-mohammad-abdul-hamid-2013-2023-mohammed-shahabuddin-2023-present-link-zillur-rahman-to-https-en-wikipedia-org-wiki-zillur-rahman-where-appropriate-all-external-links-open-in-a-new-tab-with-target-blank-rel-noopener-noreferrer-and-use-the-site-s-gold-accent-link-style",
+      "title": "Enrich the Organisation page (`frontend/src/pages/Organisation.tsx`) with a new 'Presidents of Bangladesh (Awami League era)' table listing: Sheikh Mujibur Rahman (1971–1972), Abu Sayeed Chowdhury (1972–1973), Mohammad Mohammadullah (1974–1975), Sheikh Mujibur Rahman (1975, Assassinated), Khondaker Mostaq Ahmad (1975, Deposed), Abu Sadat Mohammad Sayem (1975–1977), Zillur Rahman (2009–2013), Mohammad Abdul Hamid (2013–2023), Mohammed Shahabuddin (2023–Present). Link Zillur Rahman to https://en.wikipedia.org/wiki/Zillur_Rahman where appropriate. All external links open in a new tab with `target='_blank' rel='noopener noreferrer'` and use the site's gold accent link style.",
+      "reqIds": [
+        "REQ-22"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-enrich-the-organisation-page-frontend-src-pages-organisation-tsx-with-a-new-vice-president-of-bangladesh-entry-noting-syed-nazrul-islam-1971-1972-with-the-note-that-he-served-as-acting-party-president-1966-1969-while-sheikh-mujibur-rahman-was-in-prison-link-syed-nazrul-islam-to-https-en-wikipedia-org-wiki-syed-nazrul-islam-the-link-must-open-in-a-new-tab-with-target-blank-rel-noopener-noreferrer-and-use-the-site-s-gold-accent-link-style",
+      "title": "Enrich the Organisation page (`frontend/src/pages/Organisation.tsx`) with a new 'Vice President of Bangladesh' entry noting Syed Nazrul Islam (1971–1972) with the note that he served as Acting Party President (1966–1969) while Sheikh Mujibur Rahman was in prison. Link Syed Nazrul Islam to https://en.wikipedia.org/wiki/Syed_Nazrul_Islam. The link must open in a new tab with `target='_blank' rel='noopener noreferrer'` and use the site's gold accent link style.",
+      "reqIds": [
+        "REQ-23"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-or-update-the-party-wings-section-on-the-organisation-page-frontend-src-pages-organisation-tsx-to-display-all-eight-wings-in-a-structured-table-or-card-grid-with-columns-for-type-official-name-and-common-term-student-wing-bangladesh-chhatra-league-chhatra-league-youth-wing-bangladesh-awami-jubo-league-jubo-league-women-s-wing-bangladesh-mohila-awami-league-mohila-league-farmer-wing-bangladesh-krishak-league-krishak-league-trade-union-wing-bangladesh-jatiya-sramik-league-jatiya-sramik-league-volunteer-wing-bangladesh-awami-swechasebak-league-swechasebak-league-female-youth-wing-bangladesh-jubo-mohila-league-jubo-mohila-league-fisherman-wing-bangladesh-awami-matsyajeebi-league-matsyajeebi-league-style-consistently-with-the-site-s-green-gold-cream-theme",
+      "title": "Add or update the 'Party Wings' section on the Organisation page (`frontend/src/pages/Organisation.tsx`) to display all eight wings in a structured table or card grid with columns for Type, Official Name, and Common Term: Student wing – Bangladesh Chhatra League (Chhatra League), Youth wing – Bangladesh Awami Jubo League (Jubo League), Women's wing – Bangladesh Mohila Awami League (Mohila League), Farmer wing – Bangladesh Krishak League (Krishak League), Trade union wing – Bangladesh Jatiya Sramik League (Jatiya Sramik League), Volunteer wing – Bangladesh Awami Swechasebak League (Swechasebak League), Female youth wing – Bangladesh Jubo Mohila League (Jubo Mohila League), Fisherman wing – Bangladesh Awami Matsyajeebi League (Matsyajeebi League). Style consistently with the site's green/gold/cream theme.",
+      "reqIds": [
+        "REQ-24"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Homepage with overview of the Awami League",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "History section covering party history and Bangladesh independence",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Ideology and policies section",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Organisation/structure section",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Bangladesh Chhatra League (student wing) section",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Add Internet Identity login so members can sign in and access exclusive content",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Integrate Internet Identity authentication into the backend. Add Motoko functions to: register a member profile tied to their Principal (store display name and join date), retrieve the calling user's profile, and check whether the caller is a registered member.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Incorporate additional Wikipedia reference links into site content: Bangabandhu, Bengali alphabet, key founding figures (Shamsul Huq, Khaleque Nawaz Khan, Shawkat Ali, Kazi Golam Mahboob, A.K. Fazlul Huq, Oli Ahad, Maulana Bhashani, Ataur Rahman Khan), Bengali language movement, Jukta Front, Bangla Academy, Kagmari Conference, University of Dhaka, Six-point movement, Agartala Conspiracy Case",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Add additional Wikipedia reference links and an image to site content: A.B.M. Mohiuddin Chowdhury, Saber Hossain Chowdhury, Non-Aligned Movement, Bangladesh famine of 1974, Bangladesh Krishak Sramik Awami League, Syed Nazrul Islam, Tajuddin Ahmed, Muhammad Mansur Ali, A.H.M. Qamaruzzaman, Sheikh Hasina, Gopalganj District, Ahsanullah Master, 2004 Dhaka grenade attack, and a Noor Hossain rally photo from Wikimedia Commons",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Add Wikipedia reference links to site content: Asaduzzaman Nur, 2008 Bangladeshi general election, Jatiya Party (Ershad), and Dipu Moni",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Add parliament member Wikipedia links (A.B.M. Mohiuddin Chowdhury, Saber Hossain Chowdhury, Ahsanullah Master, Sheikh Hasina as PM) and enrich the Organisation/History pages with tables for: Prime Ministers of Bangladesh (Awami League), Presidents and General Secretaries (1949–present), Presidents of Bangladesh (Awami League era), Vice Presidents, and all party wings (Chhatra League, Jubo League, Mohila League, Krishak League, Jatiya Sramik League, Swechasebak League, Jubo Mohila League, Matsyajeebi League)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-17",
+      "summary": "In the History page (`frontend/src/pages/History.tsx`), ensure A.B.M. Mohiuddin Chowdhury (https://en.wikipedia.org/wiki/A.B.M._Mohiuddin_Chowdhury), Saber Hossain Chowdhury (https://en.wikipedia.org/wiki/Saber_Hossain_Chowdhury), and Ahsanullah Master (https://en.wikipedia.org/wiki/Ahsanullah_Master) are hyperlinked wherever they are mentioned. If any of these notable parliament members are not yet mentioned in an appropriate timeline entry, add a brief factual sentence about each in a relevant chronological entry (e.g., mentioning their parliamentary role or contribution to the party). All links must open in a new tab with `target='_blank' rel='noopener noreferrer'` and be styled with the site's existing gold accent/underline link convention.",
+      "reqIds": [
+        "REQ-25"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Awami League Website",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

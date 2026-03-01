@@ -1,0 +1,24 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-03-01T14:05:33.008Z",
+  "summary": "The diff shows modifications to Organisation.tsx and History.tsx. The Organisation.tsx file includes the new party presidents/general secretaries table, prime ministers table, presidents of Bangladesh table, vice president entry, and party wings section. However, the History.tsx changes for REQ-25 are not clearly evidenced in the diff — the file-summaries.txt description of History.tsx does not mention A.B.M. Mohiuddin Chowdhury, Saber Hossain Chowdhury, or Ahsanullah Master, only mentioning Asaduzzaman Nur, Dipu Moni, Jatiya Party (Ershad), and the 2008 election links. All Organisation page requirements (REQ-20 through REQ-24) appear to be implemented based on the truncated diff and file summary.",
+  "missing_requirements": [
+    {
+      "id": "REQ-25",
+      "requirement": "In the History page, ensure A.B.M. Mohiuddin Chowdhury, Saber Hossain Chowdhury, and Ahsanullah Master are hyperlinked wherever they are mentioned, or add brief factual sentences about each if not already present.",
+      "reason": "The frontend-file-summaries.txt description of History.tsx only mentions four newly added links: Asaduzzaman Nur, Dipu Moni, Jatiya Party (Ershad), and 2008 Bangladeshi general election. There is no mention of A.B.M. Mohiuddin Chowdhury, Saber Hossain Chowdhury, or Ahsanullah Master being added or hyperlinked in the History page.",
+      "evidence": [
+        "frontend-file-summaries.txt",
+        "frontend/src/pages/History.tsx"
+      ]
+    }
+  ],
+  "hallucinated_features": [],
+  "confidence": 0.82,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/src/pages/Organisation.tsx",
+    "project_state.json"
+  ]
+}
