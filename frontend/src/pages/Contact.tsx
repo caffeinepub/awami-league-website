@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone, ChevronRight, Users } from 'lucide-react';
+import { Mail, MapPin, Phone, ChevronRight, Users, ExternalLink, MessageSquare } from 'lucide-react';
 
 export default function Contact() {
   return (
@@ -19,9 +19,31 @@ export default function Contact() {
             Join the<br />
             <span style={{ color: 'oklch(0.78 0.12 75)' }}>Movement</span>
           </h1>
-          <p className="text-white/75 font-sans text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-white/75 font-sans text-lg max-w-2xl mx-auto leading-relaxed mb-8">
             Be part of Bangladesh's oldest and most storied political party. Join millions of Bangladeshis who believe in democracy, secularism, and a prosperous future.
           </p>
+          {/* Hero CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="https://www.albd.org/join-us/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-lg font-sans font-semibold text-white transition-all duration-200 hover:opacity-90 hover:-translate-y-0.5"
+              style={{ backgroundColor: 'oklch(0.52 0.22 25)' }}
+            >
+              <Users size={16} />
+              Join Us ↗
+            </a>
+            <a
+              href="https://www.albd.org/pages/contact-en"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-lg font-sans font-semibold text-white border border-white/30 backdrop-blur-sm transition-all duration-200 hover:bg-white/10 hover:-translate-y-0.5"
+            >
+              <MessageSquare size={16} />
+              Contact Us ↗
+            </a>
+          </div>
         </div>
       </section>
 
@@ -71,18 +93,35 @@ export default function Contact() {
             <h2 className="font-serif font-bold text-2xl text-foreground mb-4">
               Membership Information
             </h2>
-            <p className="text-muted-foreground font-sans leading-relaxed max-w-2xl mx-auto mb-6">
+            <p className="text-muted-foreground font-sans leading-relaxed max-w-2xl mx-auto mb-8">
               To join the Awami League or its affiliated organizations, please visit your local district or upazila committee office, or contact the party headquarters directly. Membership is open to all Bangladeshi citizens who support the party's principles of democracy, secularism, Bengali nationalism, and social justice.
             </p>
-            <a
-              href="https://www.albd.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-3 rounded-lg font-sans font-semibold text-white transition-all duration-200 hover:opacity-90 hover:-translate-y-0.5"
-              style={{ backgroundColor: 'oklch(0.38 0.1 155)' }}
-            >
-              Visit Official Website <ChevronRight size={18} />
-            </a>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="https://www.albd.org/join-us/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-lg font-sans font-semibold text-white transition-all duration-200 hover:opacity-90 hover:-translate-y-0.5"
+                style={{ backgroundColor: 'oklch(0.38 0.1 155)' }}
+              >
+                <Users size={16} />
+                Join Us <ExternalLink size={14} />
+              </a>
+              <a
+                href="https://www.albd.org/pages/contact-en"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-lg font-sans font-semibold transition-all duration-200 hover:opacity-90 hover:-translate-y-0.5"
+                style={{
+                  backgroundColor: 'transparent',
+                  color: 'oklch(0.38 0.1 155)',
+                  border: '2px solid oklch(0.38 0.1 155)',
+                }}
+              >
+                <MessageSquare size={16} />
+                Contact Us <ExternalLink size={14} />
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -143,7 +182,7 @@ export default function Contact() {
           <p className="text-white/70 font-sans mb-8">
             The Awami League has affiliated organizations for students, youth, farmers, workers, and women. Find the wing that best represents you.
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-10">
             {[
               'Bangladesh Chhatra League',
               'Bangladesh Jubo League',
@@ -160,6 +199,30 @@ export default function Contact() {
                 {wing}
               </div>
             ))}
+          </div>
+
+          {/* Bottom CTAs */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="https://www.albd.org/join-us/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-lg font-sans font-semibold text-white transition-all duration-200 hover:opacity-90 hover:-translate-y-0.5"
+              style={{ backgroundColor: 'oklch(0.52 0.22 25)' }}
+            >
+              <Users size={16} />
+              Join Us ↗
+            </a>
+            <a
+              href="https://www.albd.org/pages/contact-en"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-lg font-sans font-semibold transition-all duration-200 hover:bg-white/10 hover:-translate-y-0.5"
+              style={{ color: 'white', border: '1px solid oklch(0.78 0.12 75 / 0.5)' }}
+            >
+              <MessageSquare size={16} />
+              Contact Us ↗
+            </a>
           </div>
         </div>
       </section>

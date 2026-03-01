@@ -2,10 +2,10 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-enrich-the-organisation-page-frontend-src-pages-organisation-tsx-with-a-new-party-presidents-general-secretaries-1949-present-section-containing-a-structured-table-with-the-following-data-rows-abdul-hamid-khan-bhashani-nc-1949-53-55-23-june-1949-27-july-1956-gs-shamsul-huq-sheikh-mujibur-rahman-huseyn-shaheed-suhrawardy-acting-27-july-1956-10-october-1957-gs-sheikh-mujibur-rahman-abdur-rashid-tarkabagish-nc-1957-64-10-october-1957-25-january-1966-sheikh-mujibur-rahman-nc-1966-70-72-25-january-1966-18-january-1974-gs-tajuddin-ahmad-zillur-rahman-muhammad-qamaruzzaman-nc-1974-18-january-1974-24-february-1975-gs-zillur-rahman-dissolution-baksal-period-syeda-zohra-tajuddin-as-convenor-special-council-1977-4-april-1977-16-february-1978-abdul-malek-ukil-nc-1978-16-february-1978-16-february-1981-gs-abdur-razzaq-sheikh-hasina-nc-1981-87-92-97-02-09-12-16-19-22-16-february-1981-present-gs-abdur-razzaq-syeda-sajeda-chowdhury-zillur-rahman-abdul-jalil-sayed-ashraful-islam-obaidul-quader-apply-a-table-style-consistent-with-the-site-s-green-gold-cream-theme",
-      "featureTitle": "Enrich the Organisation page (`frontend/src/pages/Organisation.tsx`) with a new 'Party Presidents & General Secretaries (1949–present)' section containing a structured table with the following data rows: Abdul Hamid Khan Bhashani (NC: 1949, 53, 55; 23 June 1949 – 27 July 1956; GS: Shamsul Huq / Sheikh Mujibur Rahman), Huseyn Shaheed Suhrawardy acting (27 July 1956 – 10 October 1957; GS: Sheikh Mujibur Rahman), Abdur Rashid Tarkabagish (NC: 1957, 64; 10 October 1957 – 25 January 1966), Sheikh Mujibur Rahman (NC: 1966, 70, 72; 25 January 1966 – 18 January 1974; GS: Tajuddin Ahmad / Zillur Rahman), Muhammad Qamaruzzaman (NC: 1974; 18 January 1974 – 24 February 1975; GS: Zillur Rahman), Dissolution/BAKSAL period, Syeda Zohra Tajuddin as Convenor (Special Council 1977; 4 April 1977 – 16 February 1978), Abdul Malek Ukil (NC: 1978; 16 February 1978 – 16 February 1981; GS: Abdur Razzaq), Sheikh Hasina (NC: 1981, 87, 92, 97, 02, 09, 12, 16, 19, 22; 16 February 1981–present; GS: Abdur Razzaq / Syeda Sajeda Chowdhury / Zillur Rahman / Abdul Jalil / Sayed Ashraful Islam / Obaidul Quader). Apply a table style consistent with the site's green/gold/cream theme.",
+      "featureId": "feature-update-the-contact-page-frontend-src-pages-contact-tsx-to-replace-or-supplement-the-existing-placeholder-content-with-real-official-links-a-prominent-join-us-call-to-action-button-linking-to-https-www-albd-org-join-us-opens-in-a-new-tab-with-target-blank-rel-noopener-noreferrer-and-a-contact-us-button-or-section-linking-to-https-www-albd-org-pages-contact-en-opens-in-a-new-tab-style-both-links-as-primary-action-buttons-consistent-with-the-site-s-green-gold-cream-theme",
+      "featureTitle": "Update the Contact page (`frontend/src/pages/Contact.tsx`) to replace or supplement the existing placeholder content with real official links: a prominent 'Join Us' call-to-action button linking to https://www.albd.org/join-us/ (opens in a new tab with `target='_blank' rel='noopener noreferrer'`), and a 'Contact Us' button or section linking to https://www.albd.org/pages/contact-en (opens in a new tab). Style both links as primary action buttons consistent with the site's green/gold/cream theme.",
       "files": [
-        "frontend/src/pages/Organisation.tsx"
+        "frontend/src/pages/Contact.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -16,15 +16,15 @@
         "authorization@4.0.0"
       ],
       "testIds": [
-        "REQ-20"
+        "REQ-40"
       ],
       "confidence": "high"
     },
     {
-      "featureId": "feature-enrich-the-organisation-page-frontend-src-pages-organisation-tsx-with-a-new-prime-ministers-of-bangladesh-awami-league-table-listing-tajuddin-ahmad-1971-1972-sheikh-mujibur-rahman-1972-1975-muhammad-mansur-ali-1975-sheikh-hasina-1996-2001-2009-2024-link-sheikh-hasina-s-name-to-https-en-wikipedia-org-wiki-sheikh-hasina-tajuddin-ahmad-to-https-en-wikipedia-org-wiki-tajuddin-ahmed-and-muhammad-mansur-ali-to-https-en-wikipedia-org-wiki-muhammad-mansur-ali-all-links-open-in-a-new-tab-with-target-blank-rel-noopener-noreferrer-and-use-the-site-s-gold-accent-link-style",
-      "featureTitle": "Enrich the Organisation page (`frontend/src/pages/Organisation.tsx`) with a new 'Prime Ministers of Bangladesh (Awami League)' table listing: Tajuddin Ahmad (1971–1972), Sheikh Mujibur Rahman (1972–1975), Muhammad Mansur Ali (1975), Sheikh Hasina (1996–2001; 2009–2024). Link Sheikh Hasina's name to https://en.wikipedia.org/wiki/Sheikh_Hasina, Tajuddin Ahmad to https://en.wikipedia.org/wiki/Tajuddin_Ahmed, and Muhammad Mansur Ali to https://en.wikipedia.org/wiki/Muhammad_Mansur_Ali. All links open in a new tab with `target='_blank' rel='noopener noreferrer'` and use the site's gold accent link style.",
+      "featureId": "feature-add-social-media-links-to-the-site-wide-footer-frontend-src-components-footer-tsx-facebook-https-www-facebook-com-awamileague-1949-twitter-x-https-twitter-com-albd1971-and-youtube-https-www-youtube-com-user-myalbd-display-them-as-recognisable-icon-links-using-lucide-icons-or-inline-svg-labels-in-a-follow-us-or-social-media-subsection-of-the-footer-all-links-must-open-in-a-new-tab-with-target-blank-rel-noopener-noreferrer-and-be-styled-consistently-with-the-footer-s-existing-green-gold-cream-visual-conventions",
+      "featureTitle": "Add social media links to the site-wide footer (`frontend/src/components/Footer.tsx`): Facebook (https://www.facebook.com/awamileague.1949/), Twitter/X (https://twitter.com/albd1971), and YouTube (https://www.youtube.com/user/myalbd/). Display them as recognisable icon links (using Lucide icons or inline SVG labels) in a 'Follow Us' or 'Social Media' subsection of the footer. All links must open in a new tab with `target='_blank' rel='noopener noreferrer'` and be styled consistently with the footer's existing green/gold/cream visual conventions.",
       "files": [
-        "frontend/src/pages/Organisation.tsx"
+        "frontend/src/components/Footer.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -35,15 +35,15 @@
         "authorization@4.0.0"
       ],
       "testIds": [
-        "REQ-21"
+        "REQ-41"
       ],
       "confidence": "high"
     },
     {
-      "featureId": "feature-enrich-the-organisation-page-frontend-src-pages-organisation-tsx-with-a-new-presidents-of-bangladesh-awami-league-era-table-listing-sheikh-mujibur-rahman-1971-1972-abu-sayeed-chowdhury-1972-1973-mohammad-mohammadullah-1974-1975-sheikh-mujibur-rahman-1975-assassinated-khondaker-mostaq-ahmad-1975-deposed-abu-sadat-mohammad-sayem-1975-1977-zillur-rahman-2009-2013-mohammad-abdul-hamid-2013-2023-mohammed-shahabuddin-2023-present-link-zillur-rahman-to-https-en-wikipedia-org-wiki-zillur-rahman-where-appropriate-all-external-links-open-in-a-new-tab-with-target-blank-rel-noopener-noreferrer-and-use-the-site-s-gold-accent-link-style",
-      "featureTitle": "Enrich the Organisation page (`frontend/src/pages/Organisation.tsx`) with a new 'Presidents of Bangladesh (Awami League era)' table listing: Sheikh Mujibur Rahman (1971–1972), Abu Sayeed Chowdhury (1972–1973), Mohammad Mohammadullah (1974–1975), Sheikh Mujibur Rahman (1975, Assassinated), Khondaker Mostaq Ahmad (1975, Deposed), Abu Sadat Mohammad Sayem (1975–1977), Zillur Rahman (2009–2013), Mohammad Abdul Hamid (2013–2023), Mohammed Shahabuddin (2023–Present). Link Zillur Rahman to https://en.wikipedia.org/wiki/Zillur_Rahman where appropriate. All external links open in a new tab with `target='_blank' rel='noopener noreferrer'` and use the site's gold accent link style.",
+      "featureId": "feature-add-a-join-us-link-to-the-site-wide-navbar-frontend-src-components-navbar-tsx-pointing-to-https-www-albd-org-join-us-and-opening-in-a-new-tab-with-target-blank-rel-noopener-noreferrer-display-it-as-a-distinct-call-to-action-button-e-g-outlined-or-filled-with-gold-red-accent-in-both-the-desktop-menu-and-the-mobile-hamburger-menu-positioned-after-the-existing-navigation-items",
+      "featureTitle": "Add a 'Join Us' link to the site-wide Navbar (`frontend/src/components/Navbar.tsx`) pointing to https://www.albd.org/join-us/ and opening in a new tab with `target='_blank' rel='noopener noreferrer'`. Display it as a distinct call-to-action button (e.g., outlined or filled with gold/red accent) in both the desktop menu and the mobile hamburger menu, positioned after the existing navigation items.",
       "files": [
-        "frontend/src/pages/Organisation.tsx"
+        "frontend/src/components/Navbar.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -54,15 +54,15 @@
         "authorization@4.0.0"
       ],
       "testIds": [
-        "REQ-22"
+        "REQ-42"
       ],
       "confidence": "high"
     },
     {
-      "featureId": "feature-enrich-the-organisation-page-frontend-src-pages-organisation-tsx-with-a-new-vice-president-of-bangladesh-entry-noting-syed-nazrul-islam-1971-1972-with-the-note-that-he-served-as-acting-party-president-1966-1969-while-sheikh-mujibur-rahman-was-in-prison-link-syed-nazrul-islam-to-https-en-wikipedia-org-wiki-syed-nazrul-islam-the-link-must-open-in-a-new-tab-with-target-blank-rel-noopener-noreferrer-and-use-the-site-s-gold-accent-link-style",
-      "featureTitle": "Enrich the Organisation page (`frontend/src/pages/Organisation.tsx`) with a new 'Vice President of Bangladesh' entry noting Syed Nazrul Islam (1971–1972) with the note that he served as Acting Party President (1966–1969) while Sheikh Mujibur Rahman was in prison. Link Syed Nazrul Islam to https://en.wikipedia.org/wiki/Syed_Nazrul_Islam. The link must open in a new tab with `target='_blank' rel='noopener noreferrer'` and use the site's gold accent link style.",
+      "featureId": "feature-add-a-featured-notice-banner-or-card-to-the-homepage-frontend-src-pages-home-tsx-displaying-a-highlighted-announcement-that-links-to-the-article-at-https-www-albd-org-articles-news-41681-sajeeb-wazed-urges-international-community-to-save-bangladesh-from-falling-in-grasp-of-islamic-extremists-the-notice-should-display-a-short-descriptive-heading-e-g-latest-notice-or-featured-announcement-a-brief-summary-sentence-drawn-from-the-article-title-sajeeb-wazed-urges-international-community-to-save-bangladesh-from-falling-in-grasp-of-islamic-extremists-and-a-read-more-link-opening-the-url-in-a-new-tab-with-target-blank-rel-noopener-noreferrer-style-the-notice-as-a-prominent-card-or-banner-consistent-with-the-site-s-green-gold-cream-theme-placed-in-a-visible-position-such-as-below-the-hero-section-or-above-the-navigation-cards",
+      "featureTitle": "Add a featured notice banner or card to the homepage (`frontend/src/pages/Home.tsx`) displaying a highlighted announcement that links to the article at https://www.albd.org/articles/news/41681/Sajeeb-Wazed-Urges-International-Community-to-Save-Bangladesh-from-Falling-in-Grasp-of-Islamic-Extremists. The notice should display a short descriptive heading (e.g., 'Latest Notice' or 'Featured Announcement'), a brief summary sentence drawn from the article title ('Sajeeb Wazed Urges International Community to Save Bangladesh from Falling in Grasp of Islamic Extremists'), and a 'Read More' link opening the URL in a new tab with `target='_blank' rel='noopener noreferrer'`. Style the notice as a prominent card or banner consistent with the site's green/gold/cream theme, placed in a visible position such as below the hero section or above the navigation cards.",
       "files": [
-        "frontend/src/pages/Organisation.tsx"
+        "frontend/src/pages/Home.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -73,15 +73,15 @@
         "authorization@4.0.0"
       ],
       "testIds": [
-        "REQ-23"
+        "REQ-43"
       ],
       "confidence": "high"
     },
     {
-      "featureId": "feature-add-or-update-the-party-wings-section-on-the-organisation-page-frontend-src-pages-organisation-tsx-to-display-all-eight-wings-in-a-structured-table-or-card-grid-with-columns-for-type-official-name-and-common-term-student-wing-bangladesh-chhatra-league-chhatra-league-youth-wing-bangladesh-awami-jubo-league-jubo-league-women-s-wing-bangladesh-mohila-awami-league-mohila-league-farmer-wing-bangladesh-krishak-league-krishak-league-trade-union-wing-bangladesh-jatiya-sramik-league-jatiya-sramik-league-volunteer-wing-bangladesh-awami-swechasebak-league-swechasebak-league-female-youth-wing-bangladesh-jubo-mohila-league-jubo-mohila-league-fisherman-wing-bangladesh-awami-matsyajeebi-league-matsyajeebi-league-style-consistently-with-the-site-s-green-gold-cream-theme",
-      "featureTitle": "Add or update the 'Party Wings' section on the Organisation page (`frontend/src/pages/Organisation.tsx`) to display all eight wings in a structured table or card grid with columns for Type, Official Name, and Common Term: Student wing – Bangladesh Chhatra League (Chhatra League), Youth wing – Bangladesh Awami Jubo League (Jubo League), Women's wing – Bangladesh Mohila Awami League (Mohila League), Farmer wing – Bangladesh Krishak League (Krishak League), Trade union wing – Bangladesh Jatiya Sramik League (Jatiya Sramik League), Volunteer wing – Bangladesh Awami Swechasebak League (Swechasebak League), Female youth wing – Bangladesh Jubo Mohila League (Jubo Mohila League), Fisherman wing – Bangladesh Awami Matsyajeebi League (Matsyajeebi League). Style consistently with the site's green/gold/cream theme.",
+      "featureId": "feature-add-a-join-us-link-to-the-site-wide-footer-frontend-src-components-footer-tsx-under-the-existing-navigation-links-section-pointing-to-https-www-albd-org-join-us-and-opening-in-a-new-tab-with-target-blank-rel-noopener-noreferrer-style-it-consistently-with-other-footer-navigation-links",
+      "featureTitle": "Add a 'Join Us' link to the site-wide footer (`frontend/src/components/Footer.tsx`) under the existing navigation links section, pointing to https://www.albd.org/join-us/ and opening in a new tab with `target='_blank' rel='noopener noreferrer'`. Style it consistently with other footer navigation links.",
       "files": [
-        "frontend/src/pages/Organisation.tsx"
+        "frontend/src/components/Footer.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -92,7 +92,7 @@
         "authorization@4.0.0"
       ],
       "testIds": [
-        "REQ-24"
+        "REQ-44"
       ],
       "confidence": "high"
     }

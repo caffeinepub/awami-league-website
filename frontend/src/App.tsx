@@ -7,6 +7,8 @@ import Organisation from './pages/Organisation';
 import ChhatraLeague from './pages/ChhatraLeague';
 import Contact from './pages/Contact';
 import MembersArea from './pages/MembersArea';
+import News from './pages/News';
+import Resources from './pages/Resources';
 
 const rootRoute = createRootRoute({
   component: () => (
@@ -58,6 +60,18 @@ const membersRoute = createRoute({
   component: MembersArea,
 });
 
+const newsRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/news',
+  component: News,
+});
+
+const resourcesRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/resources',
+  component: Resources,
+});
+
 const routeTree = rootRoute.addChildren([
   homeRoute,
   historyRoute,
@@ -66,6 +80,8 @@ const routeTree = rootRoute.addChildren([
   chhatraLeagueRoute,
   contactRoute,
   membersRoute,
+  newsRoute,
+  resourcesRoute,
 ]);
 
 const router = createRouter({ routeTree });

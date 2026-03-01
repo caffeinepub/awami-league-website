@@ -1,5 +1,5 @@
 import { Link } from '@tanstack/react-router';
-import { BookOpen, Lightbulb, Building2, Users, ChevronRight, Star } from 'lucide-react';
+import { BookOpen, Lightbulb, Building2, Users, ChevronRight, Star, Bell, ExternalLink } from 'lucide-react';
 import KeyFactsStrip from '../components/KeyFactsStrip';
 import NavigationCard from '../components/NavigationCard';
 
@@ -43,6 +43,26 @@ const achievements = [
   { year: '2008', text: 'Landslide election victory, Digital Bangladesh vision' },
 ];
 
+const AL_BADGE_URL =
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6_%E0%A6%86%E0%A6%93%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%AE%E0%A7%80_%E0%A6%B2%E0%A7%80%E0%A6%97%E0%A7%87%E0%A6%B0_%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%9C.svg/250px-%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6_%E0%A6%86%E0%A6%93%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%AE%E0%A7%80_%E0%A6%B2%E0%A7%80%E0%A6%97%E0%A7%87%E0%A6%B0_%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%9C.svg.png';
+
+const AL_FLAG_URL =
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6_%E0%A6%86%E0%A6%93%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%AE%E0%A7%80_%E0%A6%B2%E0%A7%80%E0%A6%97%E0%A7%87%E0%A6%B0_%E0%A6%AA%E0%A6%A4%E0%A6%BE%E0%A6%95%E0%A6%BE.svg/250px-%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6_%E0%A6%86%E0%A6%93%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%AE%E0%A7%80_%E0%A6%B2%E0%A7%80%E0%A6%97%E0%A7%87%E0%A6%B0_%E0%A6%AA%E0%A6%A4%E0%A6%BE%E0%A6%95%E0%A6%BE.svg.png';
+
+const AL_SYMBOL_URL =
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6_%E0%A6%86%E0%A6%93%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%AE%E0%A7%80_%E0%A6%B2%E0%A7%80%E0%A6%97%E0%A7%87%E0%A6%B0_%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A7%80%E0%A6%95.svg/250px-%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6_%E0%A6%86%E0%A6%93%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%AE%E0%A7%80_%E0%A6%B2%E0%A7%80%E0%A6%97%E0%A7%87%E0%A6%B0_%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A7%80%E0%A6%95.svg.png';
+
+const partyIdentityImages = [
+  { src: AL_BADGE_URL, caption: 'Badge of Awami League' },
+  { src: AL_FLAG_URL, caption: 'Flag of Awami League' },
+  { src: AL_SYMBOL_URL, caption: 'Electoral Symbol of Awami League' },
+];
+
+const FEATURED_NOTICE = {
+  title: 'Sajeeb Wazed Urges International Community to Save Bangladesh from Falling in Grasp of Islamic Extremists',
+  url: 'https://www.albd.org/articles/news/41681/Sajeeb-Wazed-Urges-International-Community-to-Save-Bangladesh-from-Falling-in-Grasp-of-Islamic-Extremists',
+};
+
 export default function Home() {
   return (
     <div>
@@ -67,7 +87,7 @@ export default function Home() {
               style={{ borderColor: 'oklch(0.78 0.12 75)' }}
             >
               <img
-                src="/assets/generated/party-emblem.dim_256x256.png"
+                src={AL_BADGE_URL}
                 alt="Awami League Emblem"
                 className="w-full h-full object-cover"
               />
@@ -118,17 +138,107 @@ export default function Home() {
       {/* Key Facts Strip */}
       <KeyFactsStrip />
 
+      {/* Featured Notice Banner */}
+      <section className="py-8 bg-background">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <div
+            className="rounded-2xl border p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 shadow-card"
+            style={{
+              borderColor: 'oklch(0.72 0.14 80 / 0.4)',
+              backgroundColor: 'oklch(0.72 0.14 80 / 0.06)',
+            }}
+          >
+            {/* Icon */}
+            <div
+              className="shrink-0 w-12 h-12 rounded-xl flex items-center justify-center"
+              style={{ backgroundColor: 'oklch(0.72 0.14 80 / 0.15)' }}
+            >
+              <Bell size={22} style={{ color: 'oklch(0.62 0.14 80)' }} />
+            </div>
+
+            {/* Content */}
+            <div className="flex-1 min-w-0">
+              <div
+                className="inline-block text-xs font-sans font-semibold uppercase tracking-widest mb-1 px-2 py-0.5 rounded"
+                style={{ backgroundColor: 'oklch(0.52 0.22 25 / 0.12)', color: 'oklch(0.52 0.22 25)' }}
+              >
+                Latest Notice
+              </div>
+              <p className="font-serif font-bold text-base md:text-lg text-foreground leading-snug mt-1">
+                {FEATURED_NOTICE.title}
+              </p>
+            </div>
+
+            {/* CTA */}
+            <a
+              href={FEATURED_NOTICE.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shrink-0 inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-sans font-semibold text-sm text-white transition-all duration-200 hover:opacity-90 hover:-translate-y-0.5"
+              style={{ backgroundColor: 'oklch(0.38 0.1 155)' }}
+            >
+              Read More <ExternalLink size={14} />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Party Identity Section */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-10">
+            <div className="gold-divider mb-6" />
+            <h2 className="font-serif font-bold text-3xl md:text-4xl text-foreground mb-3">
+              Party Identity
+            </h2>
+            <p className="text-muted-foreground font-sans max-w-xl mx-auto">
+              The official symbols, flag, and electoral mark of the Bangladesh Awami League.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
+            {partyIdentityImages.map((item) => (
+              <div
+                key={item.caption}
+                className="flex flex-col items-center rounded-2xl border bg-card p-6 hover:shadow-card transition-all duration-200"
+                style={{ borderColor: 'oklch(0.38 0.1 155 / 0.2)' }}
+              >
+                <div className="flex items-center justify-center h-40 w-full mb-4">
+                  <img
+                    src={item.src}
+                    alt={item.caption}
+                    className="max-h-36 max-w-full object-contain drop-shadow-md"
+                  />
+                </div>
+                <p className="font-sans font-semibold text-sm text-foreground text-center mb-1">
+                  {item.caption}
+                </p>
+                <p className="text-xs text-muted-foreground text-center">
+                  Source:{' '}
+                  <a
+                    href="https://commons.wikimedia.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-amber-600 hover:text-amber-500 underline underline-offset-2 transition-colors"
+                  >
+                    Wikimedia Commons
+                  </a>
+                </p>
+              </div>
+            ))}
+          </div>
+          <div className="gold-divider mt-10" />
+        </div>
+      </section>
+
       {/* Mission Statement */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4 text-center max-w-3xl">
-          <div className="gold-divider mb-8" />
           <blockquote className="font-serif text-2xl md:text-3xl text-foreground font-medium italic leading-relaxed mb-6">
             "Joy Bangla — Victory to Bengal. The struggle this time is for our emancipation; the struggle this time is for independence."
           </blockquote>
           <cite className="text-muted-foreground font-sans text-sm not-italic">
             — Sheikh Mujibur Rahman, 7 March 1971
           </cite>
-          <div className="gold-divider mt-8" />
         </div>
       </section>
 
@@ -191,19 +301,29 @@ export default function Home() {
           <div className="flex justify-center mb-4">
             <Star size={32} style={{ color: 'oklch(0.78 0.12 75)' }} />
           </div>
-          <h2 className="font-serif font-bold text-3xl md:text-4xl text-primary-foreground mb-4">
-            Be Part of the Movement
+          <h2 className="font-serif font-bold text-3xl md:text-4xl text-white mb-4">
+            Join the Movement
           </h2>
-          <p className="text-primary-foreground/70 font-sans max-w-xl mx-auto mb-8">
-            Join millions of Bangladeshis who believe in democracy, secularism, and the vision of a prosperous Bangladesh.
+          <p className="text-white/70 font-sans max-w-xl mx-auto mb-8">
+            Be part of Bangladesh's journey toward progress, democracy, and prosperity. The Awami League welcomes all who share our vision.
           </p>
-          <Link
-            to="/contact"
-            className="inline-flex items-center gap-2 px-8 py-3 rounded-lg font-sans font-semibold text-white transition-all duration-200 hover:opacity-90 hover:-translate-y-0.5"
-            style={{ backgroundColor: 'oklch(0.52 0.22 25)' }}
-          >
-            Join Us Today <ChevronRight size={18} />
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="https://www.albd.org/join-us/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-3 rounded-lg font-sans font-semibold text-white transition-all duration-200 hover:opacity-90 hover:-translate-y-0.5"
+              style={{ backgroundColor: 'oklch(0.52 0.22 25)' }}
+            >
+              Join Us <ExternalLink size={16} />
+            </a>
+            <Link
+              to="/contact"
+              className="inline-flex items-center gap-2 px-8 py-3 rounded-lg font-sans font-semibold text-white border border-white/30 backdrop-blur-sm transition-all duration-200 hover:bg-white/10 hover:-translate-y-0.5"
+            >
+              Get Involved <ChevronRight size={18} />
+            </Link>
+          </div>
         </div>
       </section>
     </div>

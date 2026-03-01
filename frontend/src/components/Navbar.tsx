@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useRouterState } from '@tanstack/react-router';
-import { Menu, X, LogIn, LogOut, User, Shield } from 'lucide-react';
+import { Menu, X, LogIn, LogOut, User, Shield, UserPlus } from 'lucide-react';
 import { useInternetIdentity } from '../hooks/useInternetIdentity';
 import { useQueryClient } from '@tanstack/react-query';
 
@@ -10,7 +10,9 @@ const navLinks = [
   { label: 'Ideology & Policies', path: '/ideology' },
   { label: 'Organisation', path: '/organisation' },
   { label: 'Chhatra League', path: '/chhatra-league' },
-  { label: 'Join Us', path: '/contact' },
+  { label: 'News', path: '/news' },
+  { label: 'Resources', path: '/resources' },
+  { label: 'Contact', path: '/contact' },
   { label: 'Members Area', path: '/members' },
 ];
 
@@ -77,7 +79,7 @@ export default function Navbar() {
         <div className="container mx-auto px-4 flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-accent-gold flex-shrink-0">
+            <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-accent-gold shrink-0">
               <img
                 src="/assets/generated/party-emblem.dim_256x256.png"
                 alt="Awami League Emblem"
@@ -118,6 +120,22 @@ export default function Navbar() {
                 </Link>
               );
             })}
+
+            {/* Join Us external CTA */}
+            <a
+              href="https://www.albd.org/join-us/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-1 flex items-center gap-1.5 px-3 py-2 rounded text-sm font-sans font-semibold transition-all duration-200 hover:-translate-y-0.5"
+              style={{
+                backgroundColor: 'oklch(0.72 0.14 80 / 0.15)',
+                color: 'oklch(0.82 0.14 80)',
+                border: '1px solid oklch(0.72 0.14 80 / 0.5)',
+              }}
+            >
+              <UserPlus size={13} />
+              Join Us
+            </a>
 
             {/* Auth button */}
             {isAuthenticated ? (
@@ -205,7 +223,7 @@ export default function Navbar() {
           </button>
         </div>
 
-        <nav className="p-4 flex flex-col gap-1">
+        <nav className="p-4 flex flex-col gap-1 overflow-y-auto max-h-[calc(100vh-80px)]">
           {navLinks.map((link) => {
             const isActive = currentPath === link.path;
             const isMembersLink = link.path === '/members';
@@ -228,6 +246,22 @@ export default function Navbar() {
               </Link>
             );
           })}
+
+          {/* Mobile Join Us external CTA */}
+          <a
+            href="https://www.albd.org/join-us/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-4 py-3 rounded-lg text-sm font-sans font-semibold transition-all duration-200 mt-1"
+            style={{
+              backgroundColor: 'oklch(0.72 0.14 80 / 0.15)',
+              color: 'oklch(0.82 0.14 80)',
+              border: '1px solid oklch(0.72 0.14 80 / 0.4)',
+            }}
+          >
+            <UserPlus size={14} />
+            Join Us ↗
+          </a>
 
           {/* Mobile Auth Section */}
           <div className="mt-4 pt-4 border-t border-white/10 flex flex-col gap-2">

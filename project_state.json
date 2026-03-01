@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 13,
+  "projectStateVersion": 25,
   "summary": "A website for the Awami League political organization of Bangladesh, covering its history, ideology, policies, organisation, and affiliated student wing (Bangladesh Chhatra League), based on provided reference links.",
   "architectural_notes": [
     "Multi-page or single-page website covering Awami League: history, ideology, organisation, and Chhatra League student wing",
@@ -8,7 +8,11 @@
     "Additional Wikipedia reference sources added: Bangabandhu, Bengali alphabet, founding figures (Shamsul Huq, Khaleque Nawaz Khan, Shawkat Ali, Kazi Golam Mahboob, A.K. Fazlul Huq, Oli Ahad, Maulana Bhashani, Ataur Rahman Khan), Bengali language movement, Jukta Front, Bangla Academy, Kagmari Conference, University of Dhaka, Six-point movement, Agartala Conspiracy Case",
     "Additional Wikipedia reference sources added: A.B.M. Mohiuddin Chowdhury, Saber Hossain Chowdhury, Non-Aligned Movement, Bangladesh famine of 1974, Bangladesh Krishak Sramik Awami League, Syed Nazrul Islam, Tajuddin Ahmed, Muhammad Mansur Ali, A.H.M. Qamaruzzaman, Sheikh Hasina, Gopalganj District (Bangladesh), Ahsanullah Master, 2004 Dhaka grenade attack; Noor Hossain rally image (Wikimedia Commons)",
     "Additional Wikipedia reference sources added: Asaduzzaman Nur, 2008 Bangladeshi general election, Jatiya Party (Ershad), Dipu Moni",
-    "Additional reference sources: A.B.M. Mohiuddin Chowdhury, Saber Hossain Chowdhury, Ahsanullah Master (parliament members); Sheikh Hasina (PM); PM/President/General Secretary tables (1949–present); full list of Awami League wings"
+    "Additional reference sources: A.B.M. Mohiuddin Chowdhury, Saber Hossain Chowdhury, Ahsanullah Master (parliament members); Sheikh Hasina (PM); PM/President/General Secretary tables (1949–present); full list of Awami League wings",
+    "Additional Wikipedia reference source added: Saddam Hussain (Chhatra League) — https://en.wikipedia.org/wiki/Saddam_Hussain_(Chhatra_League)",
+    "Awami League visual assets added: logo/badge, flag, and electoral symbol from Wikimedia Commons (SVG/PNG thumbnails); Bangladesh Chhatra League flag and logo/badge also from Wikimedia Commons",
+    "News page references official albd.org sources: general news, party news, election manifesto, and newsletter",
+    "Additional reference source added: Awami League publications page (https://www.albd.org/publications/) for Resources subpage top articles"
   ],
   "known_issues": [],
   "isFixRequest": false,
@@ -196,6 +200,158 @@
         "REQ-24"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-update-the-chhatra-league-page-frontend-src-pages-chhatraleague-tsx-to-include-an-inline-wikipedia-hyperlink-for-saddam-hussain-chhatra-league-https-en-wikipedia-org-wiki-saddam-hussain-chhatra-league-wherever-his-name-is-mentioned-if-he-is-not-yet-referenced-on-the-page-add-a-brief-factual-sentence-about-him-e-g-noting-his-role-as-a-prominent-chhatra-league-leader-in-the-appropriate-context-within-the-notable-leaders-section-or-timeline-the-link-must-open-in-a-new-tab-with-target-blank-rel-noopener-noreferrer-and-be-styled-consistently-with-the-site-s-existing-gold-accent-underline-link-convention",
+      "title": "Update the Chhatra League page (`frontend/src/pages/ChhatraLeague.tsx`) to include an inline Wikipedia hyperlink for Saddam Hussain (Chhatra League) (https://en.wikipedia.org/wiki/Saddam_Hussain_(Chhatra_League)) wherever his name is mentioned. If he is not yet referenced on the page, add a brief factual sentence about him (e.g., noting his role as a prominent Chhatra League leader) in the appropriate context within the notable leaders section or timeline. The link must open in a new tab with `target='_blank' rel='noopener noreferrer'` and be styled consistently with the site's existing gold accent/underline link convention.",
+      "reqIds": [
+        "REQ-26"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-chhatra-league-page-frontend-src-pages-chhatraleague-tsx-to-display-the-bangladesh-chhatra-league-flag-image-from-wikimedia-commons-https-en-wikipedia-org-wiki-file-e0-a6-ac-e0-a6-be-e0-a6-82-e0-a6-b2-e0-a6-be-e0-a6-a6-e0-a7-87-e0-a6-b6-e0-a6-9b-e0-a6-be-e0-a6-a4-e0-a7-8d-e0-a6-b0-e0-a6-b2-e0-a7-80-e0-a6-97-e0-a7-87-e0-a6-b0-e0-a6-aa-e0-a6-a4-e0-a6-be-e0-a6-95-e0-a6-be-svg-use-the-direct-image-url-https-upload-wikimedia-org-wikipedia-commons-thumb-3-3a-e0-a6-ac-e0-a6-be-e0-a6-82-e0-a6-b2-e0-a6-be-e0-a6-a6-e0-a7-87-e0-a6-b6-e0-a6-9b-e0-a6-be-e0-a6-a4-e0-a7-8d-e0-a6-b0-e0-a6-b2-e0-a7-80-e0-a6-97-e0-a7-87-e0-a6-b0-e0-a6-aa-e0-a6-a4-e0-a6-be-e0-a6-95-e0-a6-be-svg-250px-e0-a6-ac-e0-a6-be-e0-a6-82-e0-a6-b2-e0-a6-be-e0-a6-a6-e0-a7-87-e0-a6-b6-e0-a6-9b-e0-a6-be-e0-a6-a4-e0-a7-8d-e0-a6-b0-e0-a6-b2-e0-a7-80-e0-a6-97-e0-a7-87-e0-a6-b0-e0-a6-aa-e0-a6-a4-e0-a6-be-e0-a6-95-e0-a6-be-svg-png-and-the-bangladesh-chhatra-league-logo-badge-from-wikimedia-commons-https-en-wikipedia-org-wiki-file-logo-of-bangladesh-chhatra-league-svg-use-direct-image-url-https-upload-wikimedia-org-wikipedia-commons-thumb-0-0e-logo-of-bangladesh-chhatra-league-svg-250px-logo-of-bangladesh-chhatra-league-svg-png-prominently-in-the-page-header-or-a-dedicated-visual-section-near-the-top-display-both-images-side-by-side-or-stacked-on-mobile-with-captions-labelling-them-flag-of-bangladesh-chhatra-league-and-logo-of-bangladesh-chhatra-league-respectively-and-credit-each-as-source-wikimedia-commons-style-the-image-display-consistently-with-the-page-s-existing-green-gold-cream-theme",
+      "title": "Update the Chhatra League page (`frontend/src/pages/ChhatraLeague.tsx`) to display the Bangladesh Chhatra League flag image from Wikimedia Commons (https://en.wikipedia.org/wiki/File:%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6_%E0%A6%9B%E0%A6%BE%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A6%B2%E0%A7%80%E0%A6%97%E0%A7%87%E0%A6%B0_%E0%A6%AA%E0%A6%A4%E0%A6%BE%E0%A6%95%E0%A6%BE.svg — use the direct image URL: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6_%E0%A6%9B%E0%A6%BE%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A6%B2%E0%A7%80%E0%A6%97%E0%A7%87%E0%A6%B0_%E0%A6%AA%E0%A6%A4%E0%A6%BE%E0%A6%95%E0%A6%BE.svg/250px-%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6_%E0%A6%9B%E0%A6%BE%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A6%B2%E0%A7%80%E0%A6%97%E0%A7%87%E0%A6%B0_%E0%A6%AA%E0%A6%A4%E0%A6%BE%E0%A6%95%E0%A6%BE.svg.png) and the Bangladesh Chhatra League logo/badge from Wikimedia Commons (https://en.wikipedia.org/wiki/File:Logo_of_Bangladesh_Chhatra_League.svg — use direct image URL: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Logo_of_Bangladesh_Chhatra_League.svg/250px-Logo_of_Bangladesh_Chhatra_League.svg.png) prominently in the page header or a dedicated visual section near the top. Display both images side by side (or stacked on mobile) with captions labelling them 'Flag of Bangladesh Chhatra League' and 'Logo of Bangladesh Chhatra League' respectively, and credit each as 'Source: Wikimedia Commons'. Style the image display consistently with the page's existing green/gold/cream theme.",
+      "reqIds": [
+        "REQ-27"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-homepage-frontend-src-pages-home-tsx-or-a-dedicated-visual-identity-section-that-is-clearly-visible-sitewide-to-display-the-following-three-awami-league-imagery-items-sourced-directly-from-wikimedia-commons-1-logo-badge-at-https-upload-wikimedia-org-wikipedia-commons-thumb-6-64-e0-a6-ac-e0-a6-be-e0-a6-82-e0-a6-b2-e0-a6-be-e0-a6-a6-e0-a7-87-e0-a6-b6-e0-a6-86-e0-a6-93-e0-a6-af-e0-a6-bc-e0-a6-be-e0-a6-ae-e0-a7-80-e0-a6-b2-e0-a7-80-e0-a6-97-e0-a7-87-e0-a6-b0-e0-a6-ac-e0-a7-8d-e0-a6-af-e0-a6-be-e0-a6-9c-svg-250px-e0-a6-ac-e0-a6-be-e0-a6-82-e0-a6-b2-e0-a6-be-e0-a6-a6-e0-a7-87-e0-a6-b6-e0-a6-86-e0-a6-93-e0-a6-af-e0-a6-bc-e0-a6-be-e0-a6-ae-e0-a7-80-e0-a6-b2-e0-a7-80-e0-a6-97-e0-a7-87-e0-a6-b0-e0-a6-ac-e0-a7-8d-e0-a6-af-e0-a6-be-e0-a6-9c-svg-png-with-caption-badge-of-awami-league-2-flag-at-https-upload-wikimedia-org-wikipedia-commons-thumb-2-25-e0-a6-ac-e0-a6-be-e0-a6-82-e0-a6-b2-e0-a6-be-e0-a6-a6-e0-a7-87-e0-a6-b6-e0-a6-86-e0-a6-93-e0-a6-af-e0-a6-bc-e0-a6-be-e0-a6-ae-e0-a7-80-e0-a6-b2-e0-a7-80-e0-a6-97-e0-a7-87-e0-a6-b0-e0-a6-aa-e0-a6-a4-e0-a6-be-e0-a6-95-e0-a6-be-svg-250px-e0-a6-ac-e0-a6-be-e0-a6-82-e0-a6-b2-e0-a6-be-e0-a6-a6-e0-a7-87-e0-a6-b6-e0-a6-86-e0-a6-93-e0-a6-af-e0-a6-bc-e0-a6-be-e0-a6-ae-e0-a7-80-e0-a6-b2-e0-a7-80-e0-a6-97-e0-a7-87-e0-a6-b0-e0-a6-aa-e0-a6-a4-e0-a6-be-e0-a6-95-e0-a6-be-svg-png-with-caption-flag-of-awami-league-3-electoral-symbol-at-https-upload-wikimedia-org-wikipedia-commons-thumb-d-d6-e0-a6-ac-e0-a6-be-e0-a6-82-e0-a6-b2-e0-a6-be-e0-a6-a6-e0-a7-87-e0-a6-b6-e0-a6-86-e0-a6-93-e0-a6-af-e0-a6-bc-e0-a6-be-e0-a6-ae-e0-a7-80-e0-a6-b2-e0-a7-80-e0-a6-97-e0-a7-87-e0-a6-b0-e0-a6-aa-e0-a7-8d-e0-a6-b0-e0-a6-a4-e0-a7-80-e0-a6-95-svg-250px-e0-a6-ac-e0-a6-be-e0-a6-82-e0-a6-b2-e0-a6-be-e0-a6-a6-e0-a7-87-e0-a6-b6-e0-a6-86-e0-a6-93-e0-a6-af-e0-a6-bc-e0-a6-be-e0-a6-ae-e0-a7-80-e0-a6-b2-e0-a7-80-e0-a6-97-e0-a7-87-e0-a6-b0-e0-a6-aa-e0-a7-8d-e0-a6-b0-e0-a6-a4-e0-a7-80-e0-a6-95-svg-png-with-caption-electoral-symbol-of-awami-league-place-all-three-in-a-visually-cohesive-row-or-grid-stacked-on-mobile-within-the-hero-section-or-in-a-dedicated-party-identity-section-below-the-hero-each-image-must-include-a-source-wikimedia-commons-credit-style-consistently-with-the-site-s-green-gold-cream-theme",
+      "title": "Update the homepage (`frontend/src/pages/Home.tsx`) — or a dedicated visual/identity section that is clearly visible sitewide — to display the following three Awami League imagery items sourced directly from Wikimedia Commons: (1) Logo/Badge at https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6_%E0%A6%86%E0%A6%93%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%AE%E0%A7%80_%E0%A6%B2%E0%A7%80%E0%A6%97%E0%A7%87%E0%A6%B0_%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%9C.svg/250px-%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6_%E0%A6%86%E0%A6%93%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%AE%E0%A7%80_%E0%A6%B2%E0%A7%80%E0%A6%97%E0%A7%87%E0%A6%B0_%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%9C.svg.png with caption 'Badge of Awami League'; (2) Flag at https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6_%E0%A6%86%E0%A6%93%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%AE%E0%A7%80_%E0%A6%B2%E0%A7%80%E0%A6%97%E0%A7%87%E0%A6%B0_%E0%A6%AA%E0%A6%A4%E0%A6%BE%E0%A6%95%E0%A6%BE.svg/250px-%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6_%E0%A6%86%E0%A6%93%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%AE%E0%A7%80_%E0%A6%B2%E0%A7%80%E0%A6%97%E0%A7%87%E0%A6%B0_%E0%A6%AA%E0%A6%A4%E0%A6%BE%E0%A6%95%E0%A6%BE.svg.png with caption 'Flag of Awami League'; (3) Electoral Symbol at https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6_%E0%A6%86%E0%A6%93%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%AE%E0%A7%80_%E0%A6%B2%E0%A7%80%E0%A6%97%E0%A7%87%E0%A6%B0_%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A7%80%E0%A6%95.svg/250px-%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6_%E0%A6%86%E0%A6%93%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%AE%E0%A7%80_%E0%A6%B2%E0%A7%80%E0%A6%97%E0%A7%87%E0%A6%B0_%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A7%80%E0%A6%95.svg.png with caption 'Electoral Symbol of Awami League'. Place all three in a visually cohesive row or grid (stacked on mobile) within the hero section or in a dedicated 'Party Identity' section below the hero. Each image must include a 'Source: Wikimedia Commons' credit. Style consistently with the site's green/gold/cream theme.",
+      "reqIds": [
+        "REQ-28"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-find-every-occurrence-of-the-local-generated-image-path-assets-generated-party-emblem-dim-256x256-png-or-the-full-url-https-historic-indigo-h93-draft-caffeine-xyz-assets-generated-party-emblem-dim-256x256-png-used-anywhere-in-the-frontend-codebase-including-frontend-src-components-footer-tsx-frontend-src-pages-home-tsx-and-any-other-component-or-page-and-replace-each-img-src-with-the-direct-wikimedia-commons-url-https-upload-wikimedia-org-wikipedia-commons-thumb-6-64-e0-a6-ac-e0-a6-be-e0-a6-82-e0-a6-b2-e0-a6-be-e0-a6-a6-e0-a7-87-e0-a6-b6-e0-a6-86-e0-a6-93-e0-a6-af-e0-a6-bc-e0-a6-be-e0-a6-ae-e0-a7-80-e0-a6-b2-e0-a7-80-e0-a6-97-e0-a7-87-e0-a6-b0-e0-a6-ac-e0-a7-8d-e0-a6-af-e0-a6-be-e0-a6-9c-svg-250px-e0-a6-ac-e0-a6-be-e0-a6-82-e0-a6-b2-e0-a6-be-e0-a6-a6-e0-a7-87-e0-a6-b6-e0-a6-86-e0-a6-93-e0-a6-af-e0-a6-bc-e0-a6-be-e0-a6-ae-e0-a7-80-e0-a6-b2-e0-a7-80-e0-a6-97-e0-a7-87-e0-a6-b0-e0-a6-ac-e0-a7-8d-e0-a6-af-e0-a6-be-e0-a6-9c-svg-png-do-not-alter-any-other-attributes-alt-text-class-size-on-those-image-elements",
+      "title": "Find every occurrence of the local generated image path `/assets/generated/party-emblem.dim_256x256.png` (or the full URL `https://historic-indigo-h93-draft.caffeine.xyz/assets/generated/party-emblem.dim_256x256.png`) used anywhere in the frontend codebase — including `frontend/src/components/Footer.tsx`, `frontend/src/pages/Home.tsx`, and any other component or page — and replace each `<img>` `src` with the direct Wikimedia Commons URL: `https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6_%E0%A6%86%E0%A6%93%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%AE%E0%A7%80_%E0%A6%B2%E0%A7%80%E0%A6%97%E0%A7%87%E0%A6%B0_%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%9C.svg/250px-%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6_%E0%A6%86%E0%A6%93%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%AE%E0%A7%80_%E0%A6%B2%E0%A7%80%E0%A6%97%E0%A7%87%E0%A6%B0_%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%9C.svg.png`. Do not alter any other attributes (alt text, class, size) on those image elements.",
+      "reqIds": [
+        "REQ-29"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-new-news-page-at-route-news-in-frontend-src-pages-news-tsx-the-page-must-contain-four-clearly-labelled-sections-1-latest-news-linking-to-https-www-albd-org-category-news-2-party-news-linking-to-https-www-albd-org-category-party-news-3-election-manifesto-linking-to-https-manifesto-albd-org-and-4-newsletter-linking-to-https-www-albd-org-newsletter-each-section-should-display-a-descriptive-heading-a-brief-explanatory-sentence-about-the-content-found-at-the-linked-source-and-a-prominent-call-to-action-button-or-link-opening-in-a-new-tab-with-target-blank-rel-noopener-noreferrer-directing-the-user-to-the-corresponding-official-url-style-the-page-consistently-with-the-site-s-existing-green-gold-cream-theme-using-card-or-section-layouts-matching-the-visual-conventions-of-other-pages",
+      "title": "Create a new News page at route `/news` in `frontend/src/pages/News.tsx`. The page must contain four clearly labelled sections: (1) 'Latest News' linking to https://www.albd.org/category/news, (2) 'Party News' linking to https://www.albd.org/category/party-news, (3) 'Election Manifesto' linking to https://manifesto.albd.org/, and (4) 'Newsletter' linking to https://www.albd.org/newsletter/. Each section should display a descriptive heading, a brief explanatory sentence about the content found at the linked source, and a prominent call-to-action button or link (opening in a new tab with `target='_blank' rel='noopener noreferrer'`) directing the user to the corresponding official URL. Style the page consistently with the site's existing green/gold/cream theme, using card or section layouts matching the visual conventions of other pages.",
+      "reqIds": [
+        "REQ-30"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-register-the-news-route-in-the-tanstack-router-configuration-in-frontend-src-app-tsx-wrapping-the-news-page-in-the-shared-layout-component-consistent-with-all-other-existing-routes-home-history-ideology-organisation-chhatra-league-contact-members-area",
+      "title": "Register the `/news` route in the TanStack Router configuration in `frontend/src/App.tsx`, wrapping the News page in the shared Layout component, consistent with all other existing routes (Home, History, Ideology, Organisation, Chhatra League, Contact, Members Area).",
+      "reqIds": [
+        "REQ-31"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-news-navigation-link-to-the-site-wide-navbar-frontend-src-components-navbar-tsx-pointing-to-the-news-route-positioned-alongside-the-existing-navigation-items-home-history-ideology-policies-organisation-chhatra-league-contact-the-link-must-be-included-in-both-the-desktop-menu-and-the-mobile-hamburger-menu-and-must-receive-the-same-active-route-highlighting-behaviour-as-other-nav-links",
+      "title": "Add a 'News' navigation link to the site-wide Navbar (`frontend/src/components/Navbar.tsx`) pointing to the `/news` route, positioned alongside the existing navigation items (Home, History, Ideology & Policies, Organisation, Chhatra League, Contact). The link must be included in both the desktop menu and the mobile hamburger menu, and must receive the same active-route highlighting behaviour as other nav links.",
+      "reqIds": [
+        "REQ-32"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-news-link-to-the-site-wide-footer-frontend-src-components-footer-tsx-under-the-existing-navigation-links-section-pointing-to-the-news-route-consistent-with-the-styling-of-other-footer-navigation-links",
+      "title": "Add a 'News' link to the site-wide footer (`frontend/src/components/Footer.tsx`) under the existing navigation links section, pointing to the `/news` route, consistent with the styling of other footer navigation links.",
+      "reqIds": [
+        "REQ-33"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-new-publications-resources-subpage-at-route-resources-in-frontend-src-pages-resources-tsx-add-a-top-articles-section-that-highlights-featured-publications-sourced-from-https-www-albd-org-publications-include-at-least-6-8-highlighted-article-cards-or-entries-each-with-a-descriptive-title-a-brief-summary-sentence-and-a-prominent-call-to-action-link-opening-https-www-albd-org-publications-in-a-new-tab-target-blank-rel-noopener-noreferrer-style-the-page-consistently-with-the-site-s-existing-green-gold-cream-theme-using-card-layouts-matching-the-visual-conventions-of-other-pages-e-g-news-tsx",
+      "title": "Create a new Publications/Resources subpage at route `/resources` in `frontend/src/pages/Resources.tsx`. Add a 'Top Articles' section that highlights featured publications sourced from https://www.albd.org/publications/ — include at least 6–8 highlighted article cards or entries, each with a descriptive title, a brief summary sentence, and a prominent call-to-action link opening https://www.albd.org/publications/ in a new tab (`target='_blank' rel='noopener noreferrer'`). Style the page consistently with the site's existing green/gold/cream theme, using card layouts matching the visual conventions of other pages (e.g., News.tsx).",
+      "reqIds": [
+        "REQ-34"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-register-the-resources-route-in-the-tanstack-router-configuration-in-frontend-src-app-tsx-wrapping-the-resources-page-in-the-shared-layout-component-consistent-with-all-other-existing-routes",
+      "title": "Register the `/resources` route in the TanStack Router configuration in `frontend/src/App.tsx`, wrapping the Resources page in the shared Layout component, consistent with all other existing routes.",
+      "reqIds": [
+        "REQ-35"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-resources-navigation-link-to-the-site-wide-navbar-frontend-src-components-navbar-tsx-pointing-to-the-resources-route-positioned-alongside-the-existing-navigation-items-the-link-must-be-included-in-both-the-desktop-menu-and-the-mobile-hamburger-menu-and-must-receive-the-same-active-route-highlighting-behaviour-as-other-nav-links",
+      "title": "Add a 'Resources' navigation link to the site-wide Navbar (`frontend/src/components/Navbar.tsx`) pointing to the `/resources` route, positioned alongside the existing navigation items. The link must be included in both the desktop menu and the mobile hamburger menu, and must receive the same active-route highlighting behaviour as other nav links.",
+      "reqIds": [
+        "REQ-36"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-resources-link-to-the-site-wide-footer-frontend-src-components-footer-tsx-under-the-existing-navigation-links-section-pointing-to-the-resources-route-consistent-with-the-styling-of-other-footer-navigation-links",
+      "title": "Add a 'Resources' link to the site-wide footer (`frontend/src/components/Footer.tsx`) under the existing navigation links section, pointing to the `/resources` route, consistent with the styling of other footer navigation links.",
+      "reqIds": [
+        "REQ-37"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-enrich-the-chhatra-league-page-frontend-src-pages-chhatraleague-tsx-with-a-new-contemporary-history-section-draw-content-from-the-wikipedia-article-for-bangladesh-chhatra-league-https-en-wikipedia-org-wiki-bangladesh-chhatra-league-covering-post-liberation-war-developments-through-the-present-era-including-the-organisation-s-role-during-the-democratic-movements-of-the-1980s-90s-its-activities-under-sheikh-hasina-s-government-terms-recent-student-led-campaigns-and-its-current-organisational-direction-present-this-as-a-timeline-or-structured-narrative-subsection-consistent-with-the-page-s-existing-layout-and-green-gold-cream-visual-theme-all-wikipedia-references-within-the-new-section-must-be-hyperlinked-with-target-blank-rel-noopener-noreferrer-and-styled-using-the-site-s-gold-accent-underline-link-convention",
+      "title": "Enrich the Chhatra League page (`frontend/src/pages/ChhatraLeague.tsx`) with a new 'Contemporary History' section. Draw content from the Wikipedia article for Bangladesh Chhatra League (https://en.wikipedia.org/wiki/Bangladesh_Chhatra_League), covering post-liberation war developments through the present era — including the organisation's role during the democratic movements of the 1980s–90s, its activities under Sheikh Hasina's government terms, recent student-led campaigns, and its current organisational direction. Present this as a timeline or structured narrative subsection consistent with the page's existing layout and green/gold/cream visual theme. All Wikipedia references within the new section must be hyperlinked with `target='_blank' rel='noopener noreferrer'` and styled using the site's gold accent/underline link convention.",
+      "reqIds": [
+        "REQ-38"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-standing-committees-section-to-the-chhatra-league-page-frontend-src-pages-chhatraleague-tsx-this-section-should-describe-the-standing-committee-structure-of-bangladesh-chhatra-league-including-the-central-committee-composition-president-general-secretary-and-key-executive-positions-how-committees-are-constituted-at-national-district-and-upazila-levels-and-their-role-in-party-governance-present-the-information-in-a-structured-layout-table-or-card-grid-consistent-with-the-page-s-existing-green-gold-cream-theme-where-relevant-committee-members-or-leadership-roles-are-mentioned-link-to-their-wikipedia-pages-using-the-site-s-gold-accent-underline-link-style-opening-in-a-new-tab",
+      "title": "Add a 'Standing Committees' section to the Chhatra League page (`frontend/src/pages/ChhatraLeague.tsx`). This section should describe the standing committee structure of Bangladesh Chhatra League — including the central committee composition (president, general secretary, and key executive positions), how committees are constituted at national, district, and upazila levels, and their role in party governance. Present the information in a structured layout (table or card grid) consistent with the page's existing green/gold/cream theme. Where relevant committee members or leadership roles are mentioned, link to their Wikipedia pages using the site's gold accent/underline link style, opening in a new tab.",
+      "reqIds": [
+        "REQ-39"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-contact-page-frontend-src-pages-contact-tsx-to-replace-or-supplement-the-existing-placeholder-content-with-real-official-links-a-prominent-join-us-call-to-action-button-linking-to-https-www-albd-org-join-us-opens-in-a-new-tab-with-target-blank-rel-noopener-noreferrer-and-a-contact-us-button-or-section-linking-to-https-www-albd-org-pages-contact-en-opens-in-a-new-tab-style-both-links-as-primary-action-buttons-consistent-with-the-site-s-green-gold-cream-theme",
+      "title": "Update the Contact page (`frontend/src/pages/Contact.tsx`) to replace or supplement the existing placeholder content with real official links: a prominent 'Join Us' call-to-action button linking to https://www.albd.org/join-us/ (opens in a new tab with `target='_blank' rel='noopener noreferrer'`), and a 'Contact Us' button or section linking to https://www.albd.org/pages/contact-en (opens in a new tab). Style both links as primary action buttons consistent with the site's green/gold/cream theme.",
+      "reqIds": [
+        "REQ-40"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-social-media-links-to-the-site-wide-footer-frontend-src-components-footer-tsx-facebook-https-www-facebook-com-awamileague-1949-twitter-x-https-twitter-com-albd1971-and-youtube-https-www-youtube-com-user-myalbd-display-them-as-recognisable-icon-links-using-lucide-icons-or-inline-svg-labels-in-a-follow-us-or-social-media-subsection-of-the-footer-all-links-must-open-in-a-new-tab-with-target-blank-rel-noopener-noreferrer-and-be-styled-consistently-with-the-footer-s-existing-green-gold-cream-visual-conventions",
+      "title": "Add social media links to the site-wide footer (`frontend/src/components/Footer.tsx`): Facebook (https://www.facebook.com/awamileague.1949/), Twitter/X (https://twitter.com/albd1971), and YouTube (https://www.youtube.com/user/myalbd/). Display them as recognisable icon links (using Lucide icons or inline SVG labels) in a 'Follow Us' or 'Social Media' subsection of the footer. All links must open in a new tab with `target='_blank' rel='noopener noreferrer'` and be styled consistently with the footer's existing green/gold/cream visual conventions.",
+      "reqIds": [
+        "REQ-41"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-join-us-link-to-the-site-wide-navbar-frontend-src-components-navbar-tsx-pointing-to-https-www-albd-org-join-us-and-opening-in-a-new-tab-with-target-blank-rel-noopener-noreferrer-display-it-as-a-distinct-call-to-action-button-e-g-outlined-or-filled-with-gold-red-accent-in-both-the-desktop-menu-and-the-mobile-hamburger-menu-positioned-after-the-existing-navigation-items",
+      "title": "Add a 'Join Us' link to the site-wide Navbar (`frontend/src/components/Navbar.tsx`) pointing to https://www.albd.org/join-us/ and opening in a new tab with `target='_blank' rel='noopener noreferrer'`. Display it as a distinct call-to-action button (e.g., outlined or filled with gold/red accent) in both the desktop menu and the mobile hamburger menu, positioned after the existing navigation items.",
+      "reqIds": [
+        "REQ-42"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-featured-notice-banner-or-card-to-the-homepage-frontend-src-pages-home-tsx-displaying-a-highlighted-announcement-that-links-to-the-article-at-https-www-albd-org-articles-news-41681-sajeeb-wazed-urges-international-community-to-save-bangladesh-from-falling-in-grasp-of-islamic-extremists-the-notice-should-display-a-short-descriptive-heading-e-g-latest-notice-or-featured-announcement-a-brief-summary-sentence-drawn-from-the-article-title-sajeeb-wazed-urges-international-community-to-save-bangladesh-from-falling-in-grasp-of-islamic-extremists-and-a-read-more-link-opening-the-url-in-a-new-tab-with-target-blank-rel-noopener-noreferrer-style-the-notice-as-a-prominent-card-or-banner-consistent-with-the-site-s-green-gold-cream-theme-placed-in-a-visible-position-such-as-below-the-hero-section-or-above-the-navigation-cards",
+      "title": "Add a featured notice banner or card to the homepage (`frontend/src/pages/Home.tsx`) displaying a highlighted announcement that links to the article at https://www.albd.org/articles/news/41681/Sajeeb-Wazed-Urges-International-Community-to-Save-Bangladesh-from-Falling-in-Grasp-of-Islamic-Extremists. The notice should display a short descriptive heading (e.g., 'Latest Notice' or 'Featured Announcement'), a brief summary sentence drawn from the article title ('Sajeeb Wazed Urges International Community to Save Bangladesh from Falling in Grasp of Islamic Extremists'), and a 'Read More' link opening the URL in a new tab with `target='_blank' rel='noopener noreferrer'`. Style the notice as a prominent card or banner consistent with the site's green/gold/cream theme, placed in a visible position such as below the hero section or above the navigation cards.",
+      "reqIds": [
+        "REQ-43"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-join-us-link-to-the-site-wide-footer-frontend-src-components-footer-tsx-under-the-existing-navigation-links-section-pointing-to-https-www-albd-org-join-us-and-opening-in-a-new-tab-with-target-blank-rel-noopener-noreferrer-style-it-consistently-with-other-footer-navigation-links",
+      "title": "Add a 'Join Us' link to the site-wide footer (`frontend/src/components/Footer.tsx`) under the existing navigation links section, pointing to https://www.albd.org/join-us/ and opening in a new tab with `target='_blank' rel='noopener noreferrer'`. Style it consistently with other footer navigation links.",
+      "reqIds": [
+        "REQ-44"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -273,6 +429,66 @@
       "reqIds": [
         "REQ-25"
       ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-18",
+      "summary": "Add a Wikipedia reference link to Saddam Hussain (Chhatra League) (https://en.wikipedia.org/wiki/Saddam_Hussain_(Chhatra_League)) in the appropriate page (likely ChhatraLeague or History), linking his name wherever mentioned or adding a brief factual sentence about him.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-19",
+      "summary": "Add Bangladesh Chhatra League flag and logo/badge images (from Wikimedia Commons) to the Chhatra League page, displayed prominently with credits",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-20",
+      "summary": "Add Awami League logo/badge, flag, and electoral symbol images (from Wikimedia Commons) to the site — likely on the homepage or a dedicated visual section — with appropriate credits",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-21",
+      "summary": "Add cross-link from Grand Alliance page back to Awami League page",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-22",
+      "summary": "Create a News page aggregating/linking to: general news (https://www.albd.org/category/news), party news (https://www.albd.org/category/party-news), election manifesto (https://manifesto.albd.org/), and newsletter (https://www.albd.org/newsletter/)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-23",
+      "summary": "Add election manifesto section with highlighted key points to the News/manifesto page",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-24",
+      "summary": "Create a Resources subpage highlighting top articles from https://www.albd.org/publications/",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-25",
+      "summary": "Add contemporary history section to the Chhatra League page sourced from its Wikipedia article",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-26",
+      "summary": "Add Standing Committees section to the Chhatra League page",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-27",
+      "summary": "Add external links to the site: Join Us (https://www.albd.org/join-us/), Contact (https://www.albd.org/pages/contact-en), Facebook (https://www.facebook.com/awamileague.1949/), Twitter/X (https://twitter.com/albd1971), YouTube (https://www.youtube.com/user/myalbd/), and a featured notice linking to the Sajeeb Wazed article (https://www.albd.org/articles/news/41681/...) — likely in the footer, contact page, or a dedicated social/contact section",
+      "reqIds": [],
       "status": "pending"
     }
   ],

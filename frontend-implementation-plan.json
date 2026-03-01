@@ -1,104 +1,92 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Add party leadership tables, wings, and notable member links to Organisation and History pages",
+  "title": "Add social links, Join Us, Contact, and featured notice to site",
   "requirements": [
     {
-      "id": "REQ-20",
-      "summary": "Add 'Party Presidents & General Secretaries (1949–present)' section with a structured table to the Organisation page",
+      "id": "REQ-40",
+      "summary": "Update Contact page with official Join Us and Contact Us buttons linking to external Awami League resources",
       "acceptanceCriteria": [
-        "A 'Party Presidents & General Secretaries (1949–present)' table is visible on the Organisation page.",
-        "All listed presidents and their terms and general secretaries are present.",
-        "The BAKSAL dissolution period is noted in the table.",
-        "Table is styled consistently with the site's existing green/gold/cream visual theme."
+        "A 'Join Us' button is visible on the Contact page and links to https://www.albd.org/join-us/ opening in a new tab.",
+        "A 'Contact Us' button or section is visible on the Contact page and links to https://www.albd.org/pages/contact-en opening in a new tab.",
+        "Both buttons are styled consistently with the site's existing green/gold/cream theme."
       ],
       "file_operations": [
         {
-          "path": "frontend/src/pages/Organisation.tsx",
+          "path": "frontend/src/pages/Contact.tsx",
           "operation": "modify",
-          "description": "Add a new 'Party Presidents & General Secretaries (1949–present)' section with a structured table containing all leadership data from Abdul Hamid Khan Bhashani (1949) through Sheikh Hasina (1981–present). Include columns for Name, National Council years, Term period, and General Secretary. Note the BAKSAL dissolution period row. Apply table styling consistent with the site's green/gold/cream theme using Tailwind classes that match existing sections."
+          "description": "Add two prominent call-to-action buttons below or within the existing membership section: a 'Join Us' button linking to https://www.albd.org/join-us/ and a 'Contact Us' button linking to https://www.albd.org/pages/contact-en. Both must use target='_blank' rel='noopener noreferrer'. Style the buttons using the site's primary green color with hover states, ensuring visual consistency with the existing Tailwind theme and OKLCH color tokens defined in frontend/src/index.css."
         }
       ]
     },
     {
-      "id": "REQ-21",
-      "summary": "Add 'Prime Ministers of Bangladesh (Awami League)' table with Wikipedia links to the Organisation page",
+      "id": "REQ-41",
+      "summary": "Add Facebook, Twitter/X, and YouTube social media links to the site-wide footer",
       "acceptanceCriteria": [
-        "A 'Prime Ministers of Bangladesh (Awami League)' table appears on the Organisation page.",
-        "All four prime ministers and their terms are listed.",
-        "Sheikh Hasina, Tajuddin Ahmad, and Muhammad Mansur Ali are hyperlinked to their Wikipedia pages.",
-        "Links open in a new tab and are styled with the gold accent convention."
+        "Facebook link to https://www.facebook.com/awamileague.1949/ is present in the footer and opens in a new tab.",
+        "Twitter/X link to https://twitter.com/albd1971 is present in the footer and opens in a new tab.",
+        "YouTube link to https://www.youtube.com/user/myalbd/ is present in the footer and opens in a new tab.",
+        "All three social links are visually grouped in a dedicated 'Follow Us' or equivalent subsection.",
+        "All links use `target='_blank' rel='noopener noreferrer'`."
       ],
       "file_operations": [
         {
-          "path": "frontend/src/pages/Organisation.tsx",
+          "path": "frontend/src/components/Footer.tsx",
           "operation": "modify",
-          "description": "Add a new 'Prime Ministers of Bangladesh (Awami League)' section with a table listing Tajuddin Ahmad (1971–1972), Sheikh Mujibur Rahman (1972–1975), Muhammad Mansur Ali (1975), and Sheikh Hasina (1996–2001; 2009–2024). Link Sheikh Hasina to https://en.wikipedia.org/wiki/Sheikh_Hasina, Tajuddin Ahmad to https://en.wikipedia.org/wiki/Tajuddin_Ahmed, and Muhammad Mansur Ali to https://en.wikipedia.org/wiki/Muhammad_Mansur_Ali. All links must use target='_blank' rel='noopener noreferrer' and apply the site's existing gold accent link styling (examine existing History page links for the gold underline/hover pattern)."
+          "description": "Add a new 'Follow Us' subsection to the footer containing three social media icon links: Facebook (https://www.facebook.com/awamileague.1949/), Twitter/X (https://twitter.com/albd1971), and YouTube (https://www.youtube.com/user/myalbd/). Use Lucide React icons (Facebook, Twitter, Youtube) to render recognizable social icons. Position the social links section in the existing footer grid structure. All links must use target='_blank' rel='noopener noreferrer' and maintain consistent styling with the footer's green/gold/cream theme and existing link hover states."
         }
       ]
     },
     {
-      "id": "REQ-22",
-      "summary": "Add 'Presidents of Bangladesh (Awami League era)' table to the Organisation page",
+      "id": "REQ-42",
+      "summary": "Add a Join Us call-to-action button to the site-wide Navbar for both desktop and mobile views",
       "acceptanceCriteria": [
-        "A 'Presidents of Bangladesh (Awami League era)' table appears on the Organisation page.",
-        "All listed presidents, their terms, and notable notes (Assassinated, Deposed) are displayed.",
-        "The table is styled consistently with the site's existing theme."
+        "A 'Join Us' button appears in the desktop navbar linking to https://www.albd.org/join-us/ and opening in a new tab.",
+        "The same 'Join Us' button appears in the mobile hamburger menu.",
+        "The button is visually distinct from regular nav links (e.g., accented colour).",
+        "The link uses `target='_blank' rel='noopener noreferrer'`."
       ],
       "file_operations": [
         {
-          "path": "frontend/src/pages/Organisation.tsx",
+          "path": "frontend/src/components/Navbar.tsx",
           "operation": "modify",
-          "description": "Add a new 'Presidents of Bangladesh (Awami League era)' section with a table listing Sheikh Mujibur Rahman (1971–1972), Abu Sayeed Chowdhury (1972–1973), Mohammad Mohammadullah (1974–1975), Sheikh Mujibur Rahman (1975, Assassinated), Khondaker Mostaq Ahmad (1975, Deposed), Abu Sadat Mohammad Sayem (1975–1977), Zillur Rahman (2009–2013), Mohammad Abdul Hamid (2013–2023), and Mohammed Shahabuddin (2023–Present). Link Zillur Rahman to https://en.wikipedia.org/wiki/Zillur_Rahman using target='_blank' rel='noopener noreferrer' and the site's gold accent link style. Include a Notes column for entries like 'Assassinated' and 'Deposed'."
+          "description": "Add a 'Join Us' button after the existing navigation items in both the desktop menu and mobile hamburger menu. The button should link to https://www.albd.org/join-us/ with target='_blank' rel='noopener noreferrer'. Style it as a distinct call-to-action using an outlined or filled button treatment with gold or red accent colors (e.g., border-gold-500 text-gold-600 hover:bg-gold-50 or similar) to differentiate it from regular nav links. Ensure the button is visible and properly aligned in both desktop flex row and mobile menu layouts."
         }
       ]
     },
     {
-      "id": "REQ-23",
-      "summary": "Add 'Vice President of Bangladesh' entry for Syed Nazrul Islam with Wikipedia link to the Organisation page",
+      "id": "REQ-43",
+      "summary": "Add a featured notice banner to the homepage highlighting the Sajeeb Wazed article with a Read More link",
       "acceptanceCriteria": [
-        "Syed Nazrul Islam is listed as Vice President with his term and the acting president note.",
-        "His name is hyperlinked to his Wikipedia article and opens in a new tab."
+        "A featured notice card or banner is visible on the homepage.",
+        "The notice includes a heading such as 'Latest Notice' or 'Featured Announcement'.",
+        "The notice includes the article title 'Sajeeb Wazed Urges International Community to Save Bangladesh from Falling in Grasp of Islamic Extremists' as a summary or subheading.",
+        "A 'Read More' or equivalent link opens https://www.albd.org/articles/news/41681/Sajeeb-Wazed-Urges-International-Community-to-Save-Bangladesh-from-Falling-in-Grasp-of-Islamic-Extremists in a new tab.",
+        "The link uses `target='_blank' rel='noopener noreferrer'`.",
+        "The notice is styled consistently with the site's green/gold/cream theme."
       ],
       "file_operations": [
         {
-          "path": "frontend/src/pages/Organisation.tsx",
+          "path": "frontend/src/pages/Home.tsx",
           "operation": "modify",
-          "description": "Add a new 'Vice President of Bangladesh' section or entry (can be a small table or paragraph) noting Syed Nazrul Islam (1971–1972) with an additional note that he served as Acting Party President (1966–1969) while Sheikh Mujibur Rahman was in prison. Link Syed Nazrul Islam to https://en.wikipedia.org/wiki/Syed_Nazrul_Islam using target='_blank' rel='noopener noreferrer' and the site's gold accent link style."
+          "description": "Insert a prominent featured notice card or banner below the hero section and above the KeyFactsStrip. The notice should include a heading 'Latest Notice' or 'Featured Announcement', display the article title 'Sajeeb Wazed Urges International Community to Save Bangladesh from Falling in Grasp of Islamic Extremists' as a bold subheading or summary, and provide a 'Read More' button or link that opens https://www.albd.org/articles/news/41681/Sajeeb-Wazed-Urges-International-Community-to-Save-Bangladesh-from-Falling-in-Grasp-of-Islamic-Extremists in a new tab with target='_blank' rel='noopener noreferrer'. Style the notice with a card background using the site's green/gold/cream theme, consistent border, shadow, and padding to ensure visual prominence."
         }
       ]
     },
     {
-      "id": "REQ-24",
-      "summary": "Add or update 'Party Wings' section with all eight wings in a structured table or card grid on the Organisation page",
+      "id": "REQ-44",
+      "summary": "Add a Join Us link to the footer navigation links section",
       "acceptanceCriteria": [
-        "All eight party wings are listed with their type, official name, and common term.",
-        "The section is styled consistently with the rest of the Organisation page.",
-        "The layout is responsive (table or card grid)."
+        "A 'Join Us' link appears in the footer navigation links section.",
+        "The link points to https://www.albd.org/join-us/ and opens in a new tab.",
+        "The link uses `target='_blank' rel='noopener noreferrer'`.",
+        "The link is styled consistently with existing footer navigation links."
       ],
       "file_operations": [
         {
-          "path": "frontend/src/pages/Organisation.tsx",
+          "path": "frontend/src/components/Footer.tsx",
           "operation": "modify",
-          "description": "Add or update the 'Party Wings' section to display all eight wings in a structured responsive table or card grid with columns for Type, Official Name, and Common Term. Include: Student wing (Bangladesh Chhatra League / Chhatra League), Youth wing (Bangladesh Awami Jubo League / Jubo League), Women's wing (Bangladesh Mohila Awami League / Mohila League), Farmer wing (Bangladesh Krishak League / Krishak League), Trade union wing (Bangladesh Jatiya Sramik League / Jatiya Sramik League), Volunteer wing (Bangladesh Awami Swechasebak League / Swechasebak League), Female youth wing (Bangladesh Jubo Mohila League / Jubo Mohila League), and Fisherman wing (Bangladesh Awami Matsyajeebi League / Matsyajeebi League). Style consistently with the site's green/gold/cream theme and ensure responsive layout on mobile devices."
-        }
-      ]
-    },
-    {
-      "id": "REQ-25",
-      "summary": "Add Wikipedia links for notable parliament members (A.B.M. Mohiuddin Chowdhury, Saber Hossain Chowdhury, Ahsanullah Master) in the History page timeline",
-      "acceptanceCriteria": [
-        "A.B.M. Mohiuddin Chowdhury is hyperlinked in the History page timeline with the provided Wikipedia URL.",
-        "Saber Hossain Chowdhury is hyperlinked in the History page timeline with the provided Wikipedia URL.",
-        "Ahsanullah Master is hyperlinked in the History page timeline with the provided Wikipedia URL.",
-        "All three links open in a new tab with rel='noopener noreferrer' and use the gold accent link style.",
-        "If any name was not previously mentioned in the timeline, a brief factual sentence has been added in the appropriate chronological entry."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/pages/History.tsx",
-          "operation": "modify",
-          "description": "Review the existing timeline entries in the History page and ensure A.B.M. Mohiuddin Chowdhury (https://en.wikipedia.org/wiki/A.B.M._Mohiuddin_Chowdhury), Saber Hossain Chowdhury (https://en.wikipedia.org/wiki/Saber_Hossain_Chowdhury), and Ahsanullah Master (https://en.wikipedia.org/wiki/Ahsanullah_Master) are hyperlinked wherever they appear. If any of these notable parliament members are not yet mentioned, add a brief factual sentence about their parliamentary role or contribution in a relevant chronological entry (e.g., under entries for the 1990s–2000s periods for their terms). All links must use target='_blank' rel='noopener noreferrer' and apply the site's existing gold accent/underline link convention consistent with other History page Wikipedia links."
+          "description": "Add a 'Join Us' link to the existing navigation links column in the footer (where Resources and other nav links are displayed). The link should point to https://www.albd.org/join-us/ with target='_blank' rel='noopener noreferrer' and maintain the same styling as the existing footer nav links (text color, hover states, font weight). Position it logically within the navigation list, e.g., after the main site sections or as the last item in the column."
         }
       ]
     }

@@ -1,14 +1,13 @@
 # Specification
 
 ## Summary
-**Goal:** Enrich the Organisation and History pages with leadership tables, party wings, and notable member hyperlinks.
+**Goal:** Add social media links, "Join Us" CTAs, a "Contact Us" link, and a featured notice banner to the Awami League Bangladesh site.
 
 **Planned changes:**
-- Add a "Party Presidents & General Secretaries (1949–present)" table to the Organisation page with all listed presidents, their terms, general secretaries, and a note for the BAKSAL dissolution period, styled in the site's green/gold/cream theme.
-- Add a "Prime Ministers of Bangladesh (Awami League)" table to the Organisation page listing Tajuddin Ahmad, Sheikh Mujibur Rahman, Muhammad Mansur Ali, and Sheikh Hasina with their terms; hyperlink Tajuddin Ahmad, Muhammad Mansur Ali, and Sheikh Hasina to their Wikipedia pages (opens in new tab, gold accent style).
-- Add a "Presidents of Bangladesh (Awami League era)" table to the Organisation page listing all relevant presidents with terms and notable notes (Assassinated, Deposed); link Zillur Rahman to his Wikipedia page.
-- Add a "Vice President of Bangladesh" entry for Syed Nazrul Islam (1971–1972) with a note about his acting party presidency (1966–1969); hyperlink his name to his Wikipedia page.
-- Add or update the "Party Wings" section on the Organisation page to display all eight wings (Student, Youth, Women's, Farmer, Trade union, Volunteer, Female youth, Fisherman) in a structured table or card grid with Type, Official Name, and Common Term columns, styled consistently with the site theme.
-- In the History page, hyperlink A.B.M. Mohiuddin Chowdhury, Saber Hossain Chowdhury, and Ahsanullah Master to their respective Wikipedia pages wherever mentioned (or add brief factual sentences in appropriate timeline entries if not yet present); all links open in new tab with gold accent style.
+- Update the Contact page to include a "Join Us" button linking to https://www.albd.org/join-us/ and a "Contact Us" button linking to https://www.albd.org/pages/contact-en, both opening in a new tab, styled with the site's green/gold/cream theme.
+- Add a "Follow Us" section to the footer with Facebook, Twitter/X, and YouTube icon links opening in new tabs.
+- Add a "Join Us" link to the footer navigation section pointing to https://www.albd.org/join-us/ opening in a new tab.
+- Add a visually distinct "Join Us" button to the Navbar (desktop and mobile) linking to https://www.albd.org/join-us/ opening in a new tab.
+- Add a featured notice card/banner to the homepage below the hero section displaying the article title "Sajeeb Wazed Urges International Community to Save Bangladesh from Falling in Grasp of Islamic Extremists" with a "Read More" link opening in a new tab.
 
-**User-visible outcome:** Visitors to the Organisation page will see comprehensive leadership history tables (presidents, general secretaries, prime ministers, presidents of Bangladesh, vice president, and party wings), and visitors to the History page will find three notable parliament members hyperlinked within the timeline.
+**User-visible outcome:** Users can follow the party on social media via footer icons, join or contact the party via prominent buttons on the Contact page and navbar, and see a featured news notice on the homepage.

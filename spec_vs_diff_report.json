@@ -1,24 +1,26 @@
 {
   "kind": "spec_vs_diff_report",
   "version": "1.0",
-  "generatedAt": "2026-03-01T14:05:33.008Z",
-  "summary": "The diff shows modifications to Organisation.tsx and History.tsx. The Organisation.tsx file includes the new party presidents/general secretaries table, prime ministers table, presidents of Bangladesh table, vice president entry, and party wings section. However, the History.tsx changes for REQ-25 are not clearly evidenced in the diff — the file-summaries.txt description of History.tsx does not mention A.B.M. Mohiuddin Chowdhury, Saber Hossain Chowdhury, or Ahsanullah Master, only mentioning Asaduzzaman Nur, Dipu Moni, Jatiya Party (Ershad), and the 2008 election links. All Organisation page requirements (REQ-20 through REQ-24) appear to be implemented based on the truncated diff and file summary.",
-  "missing_requirements": [
+  "generatedAt": "2026-03-01T15:07:41.136Z",
+  "summary": "All five requirements (REQ-40 through REQ-44) appear to be implemented in the diff. The Contact page has 'Join Us' and 'Contact Us' buttons with correct URLs and target attributes. The Footer has social media links (Facebook, Twitter/X, YouTube) under a 'Follow Us' label, plus a 'Join Us' link in the navigation section. The Navbar has a 'Join Us' external button in both desktop and mobile menus. The Homepage has a FEATURED_NOTICE constant with the correct article title and URL. Minor uncertainty exists due to truncation of some files, but the file summaries confirm all features are present.",
+  "missing_requirements": [],
+  "hallucinated_features": [
     {
-      "id": "REQ-25",
-      "requirement": "In the History page, ensure A.B.M. Mohiuddin Chowdhury, Saber Hossain Chowdhury, and Ahsanullah Master are hyperlinked wherever they are mentioned, or add brief factual sentences about each if not already present.",
-      "reason": "The frontend-file-summaries.txt description of History.tsx only mentions four newly added links: Asaduzzaman Nur, Dipu Moni, Jatiya Party (Ershad), and 2008 Bangladeshi general election. There is no mention of A.B.M. Mohiuddin Chowdhury, Saber Hossain Chowdhury, or Ahsanullah Master being added or hyperlinked in the History page.",
+      "description": "A dedicated 'Connect' column added to the footer with Join Us, Contact Us, Facebook, X, and YouTube links as a separate fourth column, beyond what was explicitly requested.",
+      "reason": "The requirement asked for social links grouped in a 'Follow Us' subsection and a 'Join Us' link in the existing navigation links section, not a brand-new dedicated 'Connect' column. The file summary describes this additional column which was not part of the spec.",
       "evidence": [
-        "frontend-file-summaries.txt",
-        "frontend/src/pages/History.tsx"
+        "frontend/src/components/Footer.tsx",
+        "frontend-file-summaries.txt"
       ]
     }
   ],
-  "hallucinated_features": [],
-  "confidence": 0.82,
+  "confidence": 0.8,
   "changed_files": [
     "frontend-file-summaries.txt",
-    "frontend/src/pages/Organisation.tsx",
+    "frontend/src/components/Footer.tsx",
+    "frontend/src/components/Navbar.tsx",
+    "frontend/src/pages/Contact.tsx",
+    "frontend/src/pages/Home.tsx",
     "project_state.json"
   ]
 }
